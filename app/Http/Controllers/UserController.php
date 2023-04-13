@@ -11,7 +11,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('produit.aa');
+        
     }
 
     /**
@@ -35,8 +35,7 @@ class UserController extends Controller
      */
     public function show(string $id)
     {
-        $users=User::all();
-        return view('produit.aa',compact('users'));;
+
     }
 
     /**

@@ -28,23 +28,5 @@ class HomeController extends Controller
     {
         return view('indexAuth');
     }
-    public function addcart(Request $request, $id)
-    {
-        if(Auth::id()){
 
-            $product=Product::find($id);
-            $cart=new Cart();
-            $user=auth()->user();
-
-            $cart->name=$user->name;
-            $cart->quantity=$request->qnt;
-            $cart->Product_title=$product->ProductName;
-            $cart->price=$product->price;
-            $cart->save();
-            return redirect()->back();
-
-        }else{
-            return redirect('adminLogin');
-        }
-    }
 }

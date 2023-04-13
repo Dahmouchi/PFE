@@ -7,6 +7,34 @@
 	--font-family: "Lato";
 	--font-family2: 'Lobster', 'Dancing Script', cursive;
   }
+.fnt{
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #174543;
+}
+.card{
+
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;}
+.ic{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-right: 50px;
+   }
+.quantity{
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 95%;
+    padding: 3px 10px;
+}
 .menu-boxs {
 	color: white;
 	margin: auto;
@@ -92,4 +120,3 @@
 	text-align: center;
 	font-weight: 700;
   }
-  
