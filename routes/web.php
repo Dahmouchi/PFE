@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
@@ -8,6 +9,8 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\EmployeeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -53,7 +56,13 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 //admin routes
 Route::prefix('admin')->middleware('auth','isAdmin')->group(function(){
 
-    Route::get('/dashboard', function () {return view('dashboard');})->name('dash');
+    Route::get('/products', [AdminController::class, 'ShowProduct'])->name("prod");
+    Route::get('/dashboatd', [AdminController::class, 'ShowOrder'])->name("dash");
+    Route::get('/employee', [AdminController::class, 'showEmployee'])->name("emp");
+    Route::get('/setting', [AdminController::class, 'setting'])->name("sett");
+    Route::post('/commandes/{client}' , [AdminController::class ,'serch'])->name('serch');
+    Route::post('/employees' , [EmployeeController::class ,'store'])->name('empStore');
+    Route::post('/destroy/{id}' , [EmployeeController::class ,'destroyEmp'])->name('empdestroy');
 
 });
 

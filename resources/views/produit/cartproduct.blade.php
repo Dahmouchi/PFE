@@ -109,7 +109,7 @@ $totale = 0;
                     @csrf
                     <div class="row">
                         <div class="col">
-                            <input type="text" name="name" id="name" value="{{Auth::user()->name}}" class="form-control" placeholder="Name">
+                            <input type="text" name="name" id="name" value="{{Auth::user()->name}}" readonly class="form-control" placeholder="Name">
                         </div>
                         <div class="col">
                             <input type="text" name="email" id="name" value="{{Auth::user()->email}}" class="form-control" placeholder="Email"><br>

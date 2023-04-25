@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 use App\Models\Order;
+use App\Models\Product;
+use App\Models\User;
 use Illuminate\Http\Request;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 class OrderController extends Controller
 {
@@ -11,7 +14,7 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+        return view('dashboard.Dashboard');
     }
 
     /**
@@ -47,11 +50,11 @@ class OrderController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show()
     {
-        //
-    }
 
+    }
+    
     /**
      * Show the form for editing the specified resource.
      */

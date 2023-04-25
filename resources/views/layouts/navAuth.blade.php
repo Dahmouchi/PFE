@@ -18,7 +18,7 @@
             <li><a href="#projects" data-after="Services">Services</a></li>
             <li><a href="#about" data-after="About">About</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
-            <li><a href="{{url('admin/dashboard')}}">{{ Auth::user()->name }}</a></li>
+            <li><a href="{{Route('dash')}}">{{ Auth::user()->name }}</a></li>
             <li><a href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();">

@@ -46,77 +46,83 @@
     </div>
 
     <!-- ------------------ cards food --------------- -->
-    <div class="container px-4 text-center">
-    <div class="row gx-5">
-        @foreach ($products as $data)
-        @if($data->category=='food')
-        <div class="col ">
-            <div class="p-3">
-            <div class="card" style="width: 18rem;">
-            <img src="{{asset('images/productImage/'.$data->image)}}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{$data->ProductName}}</h5>
-                <p class="card-text">{{$data->description}}</p>
-                <p class="fnt">{{$data->price}} DH</p>
+    <div class="containe">
+
+            @foreach ($products as $data)
+            @if($data->category=='food')
 
 
-                <form action="{{url('addCart',$data->id)}}" method="POST" class="" >
-                @csrf
+                  <div class="product">
+                    <img src="{{asset('images/productImage/'.$data->image)}}" alt="">
+                    <div class="details">
 
-                <input type="number" value="1" name="qnt" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;width: 70px;" class="form-control"  min="1" id=""><br>
-                <div class="row" >
+                        <div class="name-price">
+                        <h5> &mdash;{{$data->ProductName}}</h5>
+                        <h5 class="price">{{$data->price}}DH </h5>
+                      </div>
 
-                    <input type="submit" name="" value="Add Cart" id="" class="btn btn-warning col">
-                    <a href="@@"  style="height: 40px; margin-left:10px;" id="" class="btn btn-primary col">by now</a>
-                </div>
-            </form>
-            </div>
-            </div>
-        </div>
-        </div>
-        @endif
-        @endforeach
+                      <p>{{$data->description}}.</p>
+                      <form action="{{url('addCart',$data->id)}}" method="POST" class="" >
+                        @csrf
+                       <div class="aa">
+                        <input type="number" value="1" name="qnt" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;width: 70px;" class="form-control"  min="1" id=""><br>
+                        <button type="submit" >Add To Cart</button>
+                       </div>
+                      </form>
+                    </div>
+                  </div>
+
+
+            @endif
+            @endforeach
+
+
     </div>
-    </div>
+
 
     <!-- ------------------ end cards--------------- -->
 
-    <div class="container">
+    <div class="containe">
     <div class="food-title">
         <h2 id="drink"> Drinks </h2>
         <p> &mdash; Taste the Difference &mdash;</p>
     </div>
     </div>
     <!-- ------------------ cards drink --------------- -->
-    <div class="container px-4 text-center">
-    <div class="row gx-5">
+    <div class="containe">
+
         @foreach ($products as $data)
         @if($data->category=='drink')
-        <div class="col">
-            <div class="p-3">
-            <div class="card " style="width: 18rem;">
-            <img src="{{asset('images/productImage/'.$data->image)}}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{$data->ProductName}}</h5>
-                <p class="card-text">{{$data->description}}</p>
-                <p class="fnt">{{$data->price}} DH</p>
-                <form action="{{url('addCart',$data->id)}}" method="POST" class="" >
-                    @csrf
 
-                    <input type="number" value="1" name="qnt" class="form-control" style="width: 70px; box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;" min="1" id=""><br>
-                    <div class="row" >
-                        <input type="submit" name="" value="Add Cart" id="" class="btn btn-warning col">
-                        <a href="@@"  style="height: 40px; margin-left:10px;" id="" class=" btn btn-primary col">by now</a>
-                    </div>
-                </form>
-            </div>
-            </div>
-        </div>
-        </div>
+
+              <div class="product">
+                <img src="{{asset('images/productImage/'.$data->image)}}" alt="">
+                <div class="details">
+
+                    <div class="name-price">
+                    <h5> &mdash;{{$data->ProductName}}</h5>
+                    <h5 class="price">{{$data->price}}DH </h5>
+                  </div>
+
+                  <p>{{$data->description}}.</p>
+                  <form action="{{url('addCart',$data->id)}}" method="POST" class="" >
+                    @csrf
+                    <div class="aa">
+                        <input type="number" value="1" name="qnt" style="box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;width: 70px;" class="form-control"  min="1" id=""><br>
+                        <button type="submit" >Add To Cart</button>
+                       </div>
+                  </form>
+                </div>
+              </div>
+
+
         @endif
         @endforeach
-    </div>
-    </div>
+
+
+</div>
+
+
 
 
 

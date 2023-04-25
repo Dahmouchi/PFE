@@ -41,7 +41,7 @@ class ProductController extends Controller
         $file->move('images/productImage/',$filename);
         $product->image=$filename;
         $product->save();
-        return view('indexAuth');
+        return redirect()->back();
     }
 
     /**
@@ -66,7 +66,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, string $id)
     {
-      
+
     }
 
     /**

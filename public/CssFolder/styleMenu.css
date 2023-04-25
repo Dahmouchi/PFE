@@ -7,6 +7,12 @@
 	--font-family: "Lato";
 	--font-family2: 'Lobster', 'Dancing Script', cursive;
   }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --main-transition:0.3s;
+  }
 .fnt{
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -14,14 +20,14 @@
     color: #174543;
 }
 .card{
-
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;}
 .ic{
     display: flex;
     justify-content: right;
     align-items: center;
     margin-bottom: 30px;
-    margin-right: 50px;
+    margin-right: 20px;
+
    }
 .quantity{
     background-color: red;
@@ -32,7 +38,7 @@
     color: #fff;
     position: absolute;
     top: -5px;
-    left: 95%;
+    left: 90%;
     padding: 3px 10px;
 }
 .menu-boxs {
@@ -120,3 +126,106 @@
 	text-align: center;
 	font-weight: 700;
   }
+.containe {
+    width: 90%;
+    padding: 0 10px 30px 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px 40px;
+  }
+
+.containe .product {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border-bottom: 3px solid var(--second-color1);
+    transition: transform var(--main-transition); box-shadow: var(--main-transition);
+    margin-bottom: 10px;
+  }
+
+ .containe .product:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  }
+
+  .product img {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+   .containe .details {
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+   .containe .details .name-price {
+    font-weight: 600;
+    font-size: 20px;
+
+  }
+
+   .containe .details .name-price .price {
+    text-align: end;
+  }
+
+  .containe .details p {
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 25px;
+    align-self: stretch;
+
+  }
+
+.containe .details button {
+    background-color: var(--second-color2);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    transition: .3s all ease-in-out;
+    font-family: var(--nav-bar);
+    cursor: pointer;
+    padding: 13.5px;
+  }
+
+.containe .details button:hover {
+    background-color: var(--second-color1);
+    color: var(--second-color2);
+  }
+  .aa{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 768px) {
+
+    .container,
+    .menu-boxs .container p{
+      width: 750px;
+    }
+
+  }
+
+  @media (min-width: 992px) {
+
+    .container,
+    .menu-boxs .container p {
+      width: 970px;
+    }
+
+  }
+
+
+  /* End Menu Food & Drink */

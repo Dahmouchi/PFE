@@ -7,15 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Employee extends Model
 {
-
-protected $fillable = ['nom','phone'];
-
-    public function order()
-    {
-        return $this->hasMany(Order::class);
-    }
-
-
-
     use HasFactory;
 }
