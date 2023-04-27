@@ -96,11 +96,21 @@ $client=0;
                 <td>{{$data->created_at}}</td>
                 <td>{{$data->client}}</td>
                 <td>{{$data->price}}</td>
-                <td>
-                    <form action="{{Route('serch',$data->client)}}" method="POST">
-                        @csrf
-                        <button class="rad-6"><i class="fa-solid fa-check fa-lg"></i></button>
-                  </form>
+                <td >
+                    <div class="d-flex al-center">
+                    <div class="al-center">
+                      <form action="{{Route('serch',$data->client)}}" class="mr-5" method="POST">
+                              @csrf
+                              <button class="rad-6 "><i class="fa-solid fa-eye"></i></button>
+                      </form>
+                      </div>
+                      <div class="al-center">
+                      <form  class="mr-5" method="POST">
+                              @csrf
+                            <button class="rad-6 eye"><i class="fa-solid fa-check"></i></button>
+                      </form>
+                      </div>
+                    </div>                      
                 </td>
 
               </tr>

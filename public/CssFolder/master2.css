@@ -24,7 +24,7 @@ a {
 
 ul {
   list-style: none;
-  padding: 0;
+
 }
 
 .top-bar {
@@ -67,8 +67,14 @@ ul {
   transition: 0.2s all ease-in;
 }
 
-.sidebar ul li a:hover,
-.sidebar ul li a.active {
+.sidebar ul li a {
+  transition: 0.2s all ease-in;
+}
+
+.sidebar ul li a:hover{
+  background-color: #f6f6f6;
+}
+.sidebar ul li a:is(:link, :active, :visited).active {
   background-color: #f6f6f6;
 }
 
@@ -130,6 +136,9 @@ ul {
   cursor: pointer;
   margin-left: 15px;
 }
+.head .icons{
+  cursor: pointer;
+}
 
 .head .icons p {
   color: rgb(97, 97, 97);
@@ -141,34 +150,38 @@ ul {
   padding-left: 15px;
   border-left: 3px solid #ddd;
 }
-.head .icons ul li ul {
-  background-color: black;
-
-}
-.head .icons ul li ul li a{
-  color: white
-}
-.head .icons ul li ul{
-  display: none;
+.drop-down{
   position: absolute;
-  top: 55px;
+  top: 60px;
+  width: 120px;
+  min-height: 80px;
+  background-color: black;
+  text-align: center;
+  right: 20px;
+  visibility: hidden;
+  transition: .3s ease;
   border-radius: 6px;
-  width: 100px;
+  cursor: pointer;
 }
-.head .icons ul li:hover ul{
-  display: inherit;
+.drop-down ul{
+  position: relative;
+  flex-direction: column;
+  z-index: 10;
 }
-.head .icons ul li ul{
-  left: -50px;
+.drop-down.active{
+  visibility: visible;
 }
-.head .icons ul li ul li{
- float: none;
- display: list-item;
- position: relative;
- 
+.drop-down li a{
+  cursor: pointer;
+  color: #ccc;
+  padding: 10px;
+  transition: all .3s ease;
 }
-.head .icons ul li ul li a:hover{
-  opacity: .8;
+.drop-down li{
+  transition: all .3s ease;
+}
+.drop-down ul li:hover{
+  background-color: rgba(128, 128, 128, 0.315); 
 }
 /* End Content Head */
 
@@ -192,8 +205,7 @@ ul {
   .employes-page .employe .emp-info button span{
     display: none;
   }
-  .sidebar ul li a {
-  }
+
   .sidebar ul li a i {
     font-size: 20px;
   }
@@ -226,9 +238,6 @@ ul {
   background-color: black;
   color: white;
   border-left: 10px solid var(--second-color1);
-}
-
-.wrapper .details .intro {
 }
 /* Start of Order Table */
 .content .table-section {
@@ -273,13 +282,13 @@ ul {
 .content .table-section table button{
   background-color: #009579;
 }
-
+.table-section table button:nth-child(1),
 .table-section .title-btn button:nth-child(1),
 .employes-page .employe .emp-info button:nth-child(1),
 .change{
   background-color: var(--second-color1);
 }
-.content .table-section table button:nth-child(2),
+.table-section table button:nth-child(2),
 .table-section .title-btn button:nth-child(2),
 .employes-page .employe .emp-info button:nth-child(2){
   background-color: #e12d3a;
@@ -329,9 +338,6 @@ ul {
     width: 70%;
     background-color: var(--second-color2);
 }
-.profile-page .avatar-box .level {
-
-}
 .profile-page .info-box .box{
   cursor: pointer;
   flex-wrap: wrap;
@@ -376,7 +382,8 @@ ul {
 .table-section .title-btn button:hover,
 .employes-page .employe .emp-info button:hover,
 .content .table-section table button:hover,
-.change:hover{
+.change:hover
+{
   opacity: .8;
 }
 
@@ -405,6 +412,31 @@ ul {
   border-top: 1px solid #ddd;
   margin-top: 10px;
   padding-top: 10px;
+}
+.popup-form{
+  width: 70%;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 350px;
+  z-index: 2;
+}
+.popup-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .5);
+  display: none;
+}
+.close-btn{
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--main-color1);
 }
 /* End of Employees Page */
 /* Start of Settings Page */
@@ -493,10 +525,6 @@ input:checked + .slider:before {
   display: inline-flex;
   width: calc(100% - 80px);
 }
-.settings-page p{
-
-}
-
 /* End of Settings Page */
 
 /* Start of Products Page */

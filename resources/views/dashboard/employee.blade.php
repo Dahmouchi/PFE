@@ -66,8 +66,7 @@ Employees
           <div class="title-btn d-flex between-flex">
             <h2 class="p-10 mb-5 title-size">Employees Liste</h2>
             <div>
-              <button class="rad-6 add padbtn-mbl"><i class="fa-solid fa-user-plus "></i><span> Add</span></button>
-              <button class="rad-6 delete padbtn-mbl"><i class="fa-solid fa-user-minus "></i><span> Remove</span></button>
+              
             </div>
           </div>
           <table class="p-10">
@@ -109,8 +108,8 @@ Employees
                 </div>
                 <div class="emp-info between-flex">
                     <span class="">Joined {{$data->joind}}</span>
-                    <div>
-                        <button class="rad-6"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <div class="d-flex">
+                        <button class="rad-6" onclick="open_form()" id="edit-show"><i class="fa-solid fa-pen-to-square"></i></button>
                         <form action="{{Route('empdestroy',$data->id)}}" method="Post">
                             @csrf
                             <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
@@ -118,9 +117,14 @@ Employees
                     </div>
                 </div>
             </div>
-
+            
         @endforeach
+        
+  </div>
       </div>
+      
     </section>
+    
     @endsection
-
+</body>
+</html>

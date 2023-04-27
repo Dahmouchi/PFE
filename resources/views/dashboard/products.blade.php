@@ -58,10 +58,7 @@ Products
         <div class="table-section bg-white rad-10 txtc-mobile block-mobile p-relative p-20">
           <div class="title-btn d-flex between-flex">
             <h2 class="p-10 mb-5 title-size">Products Liste</h2>
-            <div>
-                <button class="rad-6 add padbtn-mbl"><i class="fa-solid fa-plus"></i><span> Add</span></button>
-              <button class="rad-6 delete padbtn-mbl"><i class="fa-solid fa-minus"></i><span> Remove</span></button>
-            </div>
+            
           </div>
           <table class="p-10">
             <thead>
@@ -71,6 +68,7 @@ Products
                 <th>Category</th>
                 <th>Price</th>
                 <th>Description</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -81,6 +79,10 @@ Products
                 <td>{{$data->category}}</td>
                 <td>{{$data->price}}</td>
                 <td>{{$data->description}}</td>
+                <td>
+                  <button class="rad-6"><i class="fa-solid fa-pen-to-square"></i></button>
+                  <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
+                </td>
               </tr>
               @endforeach
             </tbody>

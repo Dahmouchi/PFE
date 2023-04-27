@@ -1,3 +1,9 @@
+:root {
+  --main-color1: #0a2647;
+  --main-color2: #144272;
+  --second-color1: #205295;
+  --second-color2: #2c74b3;
+}
 /* Start of flex */
 .d-flex {
   display: flex;
@@ -71,6 +77,12 @@
 .m-20 {
   margin: 20px;
 }
+.mr-5{
+  margin-right: 5px;
+}
+.m-auto{
+  margin: auto;
+}
 /* End Padding + margin */
 /* start position */
 .p-relative {
@@ -139,3 +151,8 @@
   border: 1px solid #ccc;
 }
 /* end border */
+/* colors */
+.color-blue{
+  background-color: var(--second-color2);
+}
+/* colors */
