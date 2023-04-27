@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="{{asset('CssFolder/styleHome.css')}}">
-  <title>My Website</title>
+  <title>UniverFood</title>
 </head>
 
 <body>

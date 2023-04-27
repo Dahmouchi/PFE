@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="{{asset('CssFolder/styleHome.css')}}">
 
 
-  <title>My Website</title>
+  <title>UniverFood</title>
 </head>
 
 <body>
