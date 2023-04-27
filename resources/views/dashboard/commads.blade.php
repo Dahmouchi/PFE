@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('CssFolder/commands.css')}}">
     <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('cssFolder/framwork.css')}}" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Commandes</title>
 </head>
 <body>
+    <button class="btn btn-warning m-20"><i class="fa-solid fa-arrow-left"></i> Dashboard</button>
 @foreach ($commands as $data)
     <?php
     $name = $data->name;
@@ -34,7 +38,7 @@
                        <div class="receipt-header">
                            <div class="col-xs-6 col-sm-6 col-md-6">
                                <div class="receipt-left">
-                                   <img class="img-responsive" alt="iamgurdeeposahan" src="{{asset('images/logo.png')}}" width="180px" height="180px">
+                                   <img class="img-responsive " alt="iamgurdeeposahan" src="{{asset('images/logo.png')}}" width="180px" height="180px">
                                </div>
                            </div>
                            <div class="col-xs-6 col-sm-6 col-md-9 text-left">
@@ -101,10 +105,7 @@
                                </div>
                            </div>
 
-                               <center><h1 >Buvette de l'Ecol Superieure de Technologie Beni Mellal</h1></center>
-
-
-
+                               <center><h1 >Buvette de l'Ecole Superieure de Technologie Beni Mellal</h1></center>
                        </div>
                    </div>
 
@@ -122,6 +123,7 @@
 
 
     </body>
+    <script src="{{asset('jsFolder/all.min.js')}}"></script>
 <script>
    const btnprint= document.getElementById('print');
 
