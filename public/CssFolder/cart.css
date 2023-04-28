@@ -1,8 +1,84 @@
+:root {
+	--main-color1: #174543;
+	--main-color2: aliceblue;
+	--second-color1: #D7C37A;
+	--second-color2: #303030;
+	--font-family: "Lato";
+	--font-family2: 'Lobster', 'Dancing Script', cursive;
+  --main-transition: .5s ease;
+  }
+
 
 body{margin-top:20px;}
 select.form-control:not([size]):not([multiple]) {
     height: 44px;
 }
+/*  start menu box */
+.menu-boxs {
+	color: white;
+	margin: auto;
+	padding: 1.3rem;
+	padding-bottom: 0;
+	text-align: center;
+	background-image: url('../images/top-bar-pattern_transparent.png');
+	background-color: var(--second-color2);
+  }
+
+  .titles h2 {
+	font-size: 1.9rem;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+  }
+
+  .titles h2 span,
+  .main-order .order-title span {
+	color: var(--second-color1);
+  }
+
+  .menu-boxs .container {
+	display: inline-block;
+	padding: 0 10px 30px 10px;
+  }
+
+  .menu-boxs .container .shuffle {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    width: fit-content;
+    padding-left: 0;
+  }
+
+  .menu-boxs .container .shuffle li {
+	list-style: none;
+	padding: 13px;
+	padding-top: 10px;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+  border-radius: 10px;
+	transition: .3s all ease-in-out;
+  }
+
+  .menu-boxs .container .shuffle li a:is(:link, :active, :visited).active {
+	  background-color: var(--second-color1);
+  }
+
+  .menu-boxs .container .shuffle li:hover{
+	background-color: var(--second-color1);
+	color: black;
+  }
+
+  .menu-boxs .container p {
+	margin: auto;
+	color: #ccc;
+	font-size: 1.1rem;
+	line-height: 1.5;
+	font-family: var(--font-family);
+  }
+
+  /*end menu-box*/
+
 select.form-control {
     padding-right: 38px;
     background-position: center right 17px;

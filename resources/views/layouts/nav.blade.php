@@ -5,7 +5,7 @@
       <div class="nav-bar">
         <div class="brand">
           <a href="#hero">
-            <h1><span>E</span>ST <span>B</span>UVETTE</h1>
+            <h1><span>U</span>niver<span>F</span>ood</h1>
           </a>
         </div>
         <div class="nav-list">

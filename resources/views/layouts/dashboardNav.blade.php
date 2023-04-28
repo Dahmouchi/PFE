@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <link rel="stylesheet" href="{{asset('cssFolder/all.min.css')}}" />
     <link rel="stylesheet" href="{{asset('cssFolder/master2.css')}}" />
     <link rel="stylesheet" href="{{asset('cssFolder/framwork.css')}}" />
@@ -15,6 +15,12 @@
 
   </head>
   <body>
+    <?php $notification=0; ?>
+    @foreach ($orders as $data)
+        @if ($data->confirmation==0)
+            <?php $notification++; ?>
+        @endif
+    @endforeach
     <div class="top-bar p-relative">
     </div>
     <section class="main-page d-flex p-relative">
@@ -48,7 +54,7 @@
             </a>
           </li>
           <li>
-            <a class="d-flex al-center rad-6 p-10">
+            <a class="d-flex al-center rad-6 p-10" href="{{url('/auth')}}">
             <i class="fa-solid fa-house fa-lg"></i>
               <span>Home</span>
             </a>
@@ -69,9 +75,12 @@
               <i class="fa-solid fa-moon "></i>
             </span>
             <span class="notification p-relative p-10 ml-10" >
-              <i class="fa-regular fa-bell fa-lg"></i>
+                <i class="fa-regular fa-bell fa-lg"></i>
             </span>
-            
+            <span class="p-relative" >
+                <div class="quantity"><?php echo $notification; ?></div>
+            </span>
+
             <div class="sous-menu p-relative d-flex al-center p-10">
               <p class="ml-10">{{Auth::user()->name}}</p>
               <img src="{{asset('images/avatar.svg')}}" alt="" class="p-relative" />
@@ -85,7 +94,14 @@
                     </a>
                   </li>
                   <li>
-                    <a href="" class="d-flex al-center"><i class="fa-solid fa-right-from-bracket fa-fw"></i> Log Out</a>
+                    <a href="{{Route('logout')}}" class="d-flex al-center"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        <i class="fa-solid fa-right-from-bracket fa-fw" ></i>
+                     Log Out</a>
+                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
                   </li>
                 </ul>
               </div>

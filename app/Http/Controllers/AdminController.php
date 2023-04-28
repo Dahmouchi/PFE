@@ -13,8 +13,9 @@ class AdminController extends Controller
 
     public function showProduct()
     {
+        $orders=Order::all();
         $products=Product::all();
-        return view('dashboard.products',compact('products'));
+        return view('dashboard.products',compact('orders','products'));
     }
     public function showOrder()
     {
@@ -26,8 +27,9 @@ class AdminController extends Controller
     }
     public function showEmployee()
     {
+        $orders=Order::all();
         $emp=Employee::all();
-        return view('dashboard.employee',compact('emp'));
+        return view('dashboard.employee',compact('orders','emp'));
     }
     public function serch($client)
     {
@@ -38,7 +40,8 @@ class AdminController extends Controller
     }
     public function setting()
     {
-        return view('dashboard.settings');
+        $orders=Order::all();
+        return view('dashboard.settings',compact('orders'));
     }
 
 }

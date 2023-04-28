@@ -56,7 +56,7 @@
               harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
           </div>
           <div class="project-img">
-            <img src="{{asset('images/pizza.jpg')}}" alt="img">
+            <img src="{{asset('images/logo.png')}}" alt="img">
           </div>
         </div>
         <div class="project-item">

@@ -98,19 +98,25 @@ $client=0;
                 <td>{{$data->price}}</td>
                 <td >
                     <div class="d-flex al-center">
-                    <div class="al-center">
-                      <form action="{{Route('serch',$data->client)}}" class="mr-5" method="POST">
-                              @csrf
-                              <button class="rad-6 "><i class="fa-solid fa-eye"></i></button>
-                      </form>
-                      </div>
+
+                      @if ($data->confirmation==1)
+                      <div class="al-center"> <h4 style="color:green; margin-left:10px;">already confirmer</h4></div>
+                      @else
                       <div class="al-center">
-                      <form  class="mr-5" method="POST">
-                              @csrf
-                            <button class="rad-6 eye"><i class="fa-solid fa-check"></i></button>
+                        <form action="{{Route('serch',$data->client)}}" class="mr-5" method="POST">
+                                @csrf
+                                <button class="rad-6 " style="width: 70px;"><i class="fa-solid fa-eye"></i></button>
+                        </form>
+                        </div>
+                      <div class="al-center">
+                      <form  class="mr-5" method="POST" action="{{Route('orders.update',$data->id)}}">
+                        @method('PATCH')
+                        @csrf
+                      <button class="rad-6 eye" style="margin-left: 20px; width:70px;"><i class="fa-solid fa-check" ></i></button>
                       </form>
+                      @endif
                       </div>
-                    </div>                      
+                    </div>
                 </td>
 
               </tr>

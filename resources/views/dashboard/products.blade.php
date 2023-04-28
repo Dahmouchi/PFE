@@ -23,12 +23,12 @@ Products
               <div class="row">
               <div class="column">
                   <label for="" class="size-15 c-grey d-block mb-5">Title</label>
-                  <input id="" name="title" type="text" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="Food/Drink Name">
+                  <input id="" required name="title" type="text" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="Food/Drink Name">
               </div>
 
               <div class=" column">
                   <label for="" class="size-15 c-grey d-block mb-5">Category</label>
-                  <select name="category" id="" class="no-border p-10 rad-6 d-block full-w border-ccc" >
+                  <select name="category" id="" class="no-border p-10 rad-6 d-block full-w border-ccc" required >
                     <option value="">-- Please Select an Option --</option>
                     <option value="food">Food</option>
                     <option value="drink">Drink</option>
@@ -36,15 +36,15 @@ Products
               </div>
               <div class=" column">
                   <label for="" class="size-15 c-grey d-block mb-5">Price</label>
-                  <input id="" name="price" type="number" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="Price">
+                  <input id="" required name="price" type="number" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="Price">
               </div>
               <div class="column">
                   <label for="" class="size-15 c-grey d-block mb-5">Image</label>
-                  <input id="" name="image_product" type="file" class="no-border p-10 rad-6 d-block full-w border-ccc" >
+                  <input id="" required name="image_product" type="file" class="no-border p-10 rad-6 d-block full-w border-ccc" >
               </div>
               <div class="mb-15 column">
                   <label for="" class="size-15 c-grey d-block mb-5">Description</label>
-                  <textarea id="" name="description" type="text" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="Product description"></textarea>
+                  <textarea required id="" name="description" type="text" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="Product description"></textarea>
               </div>
               </div>
               <div class="ord-btn mt-5">
@@ -58,7 +58,7 @@ Products
         <div class="table-section bg-white rad-10 txtc-mobile block-mobile p-relative p-20">
           <div class="title-btn d-flex between-flex">
             <h2 class="p-10 mb-5 title-size">Products Liste</h2>
-            
+
           </div>
           <table class="p-10">
             <thead>
@@ -80,8 +80,12 @@ Products
                 <td>{{$data->price}}</td>
                 <td>{{$data->description}}</td>
                 <td>
-                  <button class="rad-6"><i class="fa-solid fa-pen-to-square"></i></button>
-                  <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
+                 <form action="{{Route('products.destroy',$data->id)}}" method="POST">
+                    @method('DELETE')
+                    @csrf
+                    <button class="rad-6"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
+                 </form>
                 </td>
               </tr>
               @endforeach

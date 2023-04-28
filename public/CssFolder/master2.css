@@ -12,6 +12,13 @@
 *:focus {
   outline: none;
 }
+.quantity{
+    background-color: red;
+    border-radius: 50%;
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 13px;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -29,7 +36,7 @@ ul {
 
 .top-bar {
   height: 30px;
-  background-image: linear-gradient( 
+  background-image: linear-gradient(
     to right,
     var(--main-color1) 25%,
     var(--main-color2) 50%,
@@ -181,7 +188,7 @@ ul {
   transition: all .3s ease;
 }
 .drop-down ul li:hover{
-  background-color: rgba(128, 128, 128, 0.315); 
+  background-color: rgba(128, 128, 128, 0.315);
 }
 /* End Content Head */
 
@@ -308,7 +315,7 @@ ul {
 /* End Of Order Table  */
 /* Start Of Profile */
 .profile-page .avatar-box{
-    padding: 20px; 
+    padding: 20px;
     width: 300px;
 }
 .profile-page .avatar-box h3{
@@ -329,7 +336,7 @@ ul {
 .profile-page .avatar-box > img{
     width: 120px;
     height: 120px;
-    
+
 }
 .profile-page .avatar-box .brdr{
     height: 3px;
@@ -448,7 +455,7 @@ ul {
   height: 34px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;

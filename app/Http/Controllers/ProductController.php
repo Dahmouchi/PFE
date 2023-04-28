@@ -30,6 +30,13 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        $request ->validate([
+            'title'=>'required',
+            'description'=>'required',
+            'price'=>'required',
+            'category'=>'required',
+            'image_product'=>'required',
+        ]);
         $product =new Product();
         $product->ProductName=$request->title;
         $product->description=$request->description;
@@ -72,8 +79,9 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        //
+        Product::destroy($id);
+        return redirect()->back();
     }
 }

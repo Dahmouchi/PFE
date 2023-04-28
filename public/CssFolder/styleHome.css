@@ -52,7 +52,7 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid #174543;
+	border: 2px solid #e7ff12;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -61,8 +61,8 @@ p {
 	transition-property: background-color, color;
 }
 .cta:hover {
-	color: white;
-	background-color: #174543;
+	color: rgb(49, 49, 49);
+	background-color: #ddff1e;
 }
 .brand h1 {
 	font-size: 3rem;
@@ -70,7 +70,7 @@ p {
 	color: white;
 }
 .brand h1 span {
-	color: #174543;
+	color: #eafa0c;
 }
 
 /* Header section */
@@ -203,7 +203,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url('../images/pexels-life-of-pix-67468.jpg');
+	background-image: url('../images/pexels-life-of-pix-67469.jpg');
 	background-size: cover;
 	background-position: 15px -150px;
 	position: relative;
@@ -251,7 +251,7 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: #174543;
+	background-color: #edfd07;
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }

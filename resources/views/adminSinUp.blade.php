@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-	<img class="wave" src="images/wave.png">
+	<img class="wave" src="images/wave1.png">
 	<div class="container">
 		<div class="img">
 			<img src="images/bg.svg">

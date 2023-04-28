@@ -51,4 +51,15 @@ class CartController extends Controller
 
 
     }
+    public function destroyall(string $name)
+    {
+        $carts=Cart::all()->where('name',$name);
+        foreach($carts as $data){
+            Cart::destroy($data->id);
+        }
+        $user=User::findorFail(Auth::user()->id);
+        $user->cartqnt='0';
+        $user->save();
+        return redirect()->back();
+    }
 }

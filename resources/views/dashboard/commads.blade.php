@@ -12,7 +12,7 @@
     <title>Commandes</title>
 </head>
 <body>
-    <button class="btn btn-warning m-20"><i class="fa-solid fa-arrow-left"></i> Dashboard</button>
+    <a href="{{Route('dash')}}" class="btn btn-warning m-20"><i class="fa-solid fa-arrow-left" ></i> Dashboard</a>
 @foreach ($commands as $data)
     <?php
     $name = $data->name;

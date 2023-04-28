@@ -20,17 +20,17 @@ Employees
               <div class="row">
               <div class="column">
                   <label for="" class="size-14 c-grey d-block mb-5">Date of entry </label>
-                  <input id="joind" name="joind" type="date" class="no-border p-10 rad-6 d-block full-w border-ccc" >
+                  <input required id="joind" name="joind" type="date" class="no-border p-10 rad-6 d-block full-w border-ccc" >
               </div>
 
               <div class="column">
                 <label for="" class="size-14 c-grey d-block mb-5">Full Name</label>
-                <input id="" type="text" name="fullname" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="First/Second Name">
+                <input required id="" type="text" name="fullname" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="First/Second Name">
             </div>
 
               <div class=" column">
                   <label for="" class="size-14 c-grey d-block mb-5">Gender</label>
-                  <select name="gender" id="" class="no-border p-10 rad-6 d-block full-w border-ccc" >
+                  <select required name="gender" id="" class="no-border p-10 rad-6 d-block full-w border-ccc" >
                     <option value="">-- Please Select an Option --</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
@@ -39,16 +39,16 @@ Employees
 
               <div class=" column">
                   <label for="" class="size-14 c-grey d-block mb-5">Date Of Birth</label>
-                  <input id="" name="date" type="date" class="no-border p-10 rad-6 d-block full-w border-ccc">
+                  <input required id="" name="date" type="date" class="no-border p-10 rad-6 d-block full-w border-ccc">
               </div>
 
               <div class="mb-15 column">
                   <label for="" class="size-14 c-grey d-block mb-5">Email</label>
-                  <input id="" name="email" type="email" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="employee@gmail.com">
+                  <input required id="" name="email" type="email" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="employee@gmail.com">
               </div>
               <div class="column">
                 <label for="" class="size-15 c-grey d-block mb-5">Image</label>
-                <input id="" name="image" type="file" class="no-border p-10 rad-6 d-block full-w border-ccc" >
+                <input required id="" name="image" type="file" class="no-border p-10 rad-6 d-block full-w border-ccc" >
               </div>
             </div>
               <div class="ord-btn mt-5">
@@ -66,7 +66,7 @@ Employees
           <div class="title-btn d-flex between-flex">
             <h2 class="p-10 mb-5 title-size">Employees Liste</h2>
             <div>
-              
+
             </div>
           </div>
           <table class="p-10">
@@ -117,14 +117,14 @@ Employees
                     </div>
                 </div>
             </div>
-            
+
         @endforeach
-        
+
   </div>
       </div>
-      
+
     </section>
-    
+
     @endsection
 </body>
 </html>

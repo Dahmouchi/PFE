@@ -15,8 +15,8 @@ Settings
         <div class="profile-page m-20">
           <div class="overview bg-white rad-10 d-flex al-center txt-c-mobile">
             <div class="avatar-box p-20 txt-c ">
-              <img class="mb-5 half-rad" src="../images/822711_user_512x512.png" alt="">
-              <h3 class="m-0">Admin Name</h3>
+              <img class="mb-5 half-rad" src="{{asset('images/avatar.svg')}}" alt="">
+              <h3 class="m-0">{{Auth::user()->name}}</h3>
               <div class="brdr rad-6">
               </div>
               <p class="ptb-10 c-grey">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -28,7 +28,7 @@ Settings
                 <h4 class="c-grey m-0 full-w ">General Information</h4>
                 <div class="size-14">
                   <span class="c-grey">Full Name : </span>
-                  <span>Admin Name</span>
+                  <span>{{Auth::user()->name}}</span>
                 </div>
                 <div class="size-14">
                   <span class="c-grey">Gendar :</span>
@@ -45,7 +45,7 @@ Settings
                 <h4 class="c-grey m-0 full-w">Pesonal Information :</h4>
                 <div class="size-14">
                   <span class="c-grey">Email :</span>
-                  <span>admin@gmail.com</span>
+                  <span>{{Auth::user()->email}}</span>
                 </div>
                 <div class="size-14">
                   <span class="c-grey">Phone :</span>
