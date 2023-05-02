@@ -54,7 +54,7 @@ ul {
 .sidebar {
   width: 250px;
   box-shadow: 0px 4px 10px #ddd;
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+ /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
