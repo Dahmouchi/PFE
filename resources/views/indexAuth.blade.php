@@ -157,6 +157,7 @@
     </div>
   </section>
   <!-- End Contact Section -->
+  <!-- Start Footer -->
   <footer>
   <div class="containr">
       <div class="row">
@@ -183,7 +184,8 @@
           <p>Provide constant growth
               in terms of revenue and sales, and Develop innovative products
               to meet future needs.</p>
-              <div class="icons m-20 d-flex">
+              
+          <div class="icons m-20 d-flex al-center">
             <a href=""><i class="fa-brands fa-facebook fa-lg"></i></a>
             <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
             <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
@@ -197,7 +199,15 @@
       <p> Made with &hearts;</p>
     </div>
   </footer>
+  <!-- End Footer -->
+  <!-- Scrool top -->
   
+  <span id="myBtn" onclick="topFunction()"><i class="fa-solid fa-angle-up fa-2xl"></i></span>
+  <!-- End Scroll Top -->
+  <script src="{{asset('jsFolder/all.min.js')}}"></script>
+  <script src="{{asset('jsFolder/master2.js')}}">
+    
+  </script>
 </body>
-<script src="{{asset('jsFolder/all.min.js')}}"></script>
+
 </html>

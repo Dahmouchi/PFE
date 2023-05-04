@@ -157,7 +157,8 @@
   <!-- End Contact Section -->
   
   
-
+  <script src="{{asset('jsFolder/all.min.js')}}"></script>
+<script src="{{asset('jsFolder/master2.js')}}"></script>
 </body>
 
 </html>
