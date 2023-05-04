@@ -21,7 +21,131 @@
     <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.min.css.map')}}">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<style>
+    /* Footer */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
+/* The footer is fixed to the bottom of the page */
+
+footer {
+    margin-top: 300px;
+	background-color: #1a1927;
+	color: white;
+}
+footer .containr{
+	max-width: 75%;
+	margin: auto;
+	font-size: 16px;
+}
+
+footer .containr .row{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+footer .containr .row .column{
+	width: 31%;
+	margin: 10px;
+	padding: 25px;
+}
+footer .containr .row{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 15px;
+
+}
+footer p{
+	color: white;
+}
+ul{
+	list-style: none;
+}
+footer .containr .row .column h1{
+	margin-bottom: 30px;
+	position: relative;
+}
+footer .containr .row .column h1::before{
+	content: '';
+	position: absolute;
+	left: 0px;
+	bottom: -9px;
+	background-color:#D7C37A;
+	width: 50px;
+	height: 2px;
+}
+footer .containr .row .column h3
+{
+	margin-bottom: 30px;
+	position: relative;
+	font-weight: 600;
+}
+footer .containr .row .column h3::before{
+	content: '';
+	position: absolute;
+	left: -10px;
+	top: -2px;
+	background-color:#D7C37A;
+	width: 3px;
+	height: 25px;
+}
+footer .containr .row .column .icons{
+	padding: 10px;
+
+}
+footer .containr .row .column .icons a{
+	background-color: #ccc;
+	padding: 10px;
+	margin: 0 5px;
+	color:#1a1927;
+	border-radius: 50%;
+	transition:.5s ease;
+}
+footer .containr .row .column .icons a:hover{
+	background-color: #D7C37A;
+}
+footer .containr .row .column ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+footer .containr .row .column ul li a{
+	color: #ddd;
+	transition: .5s ease;
+
+}
+footer .containr .row .column ul li a:hover{
+	color: white;
+	padding-left: 10px;
+}
+.bottom-bar{
+	background-color: #0e0e1a;
+	height: 80px;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+}
+@media (max-width: 767px){
+	footer .containr .row .column{
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 574px){
+	footer .containr .row .column{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	footer .containr .row .column h1{
+		font-size: 25px;
+	}
+	footer .containr .row .column .icons a{
+		background-color: #ccc;
+		padding: 10px;
+		margin: 0 7px;
+		color: var(#1a1927);
+		border-radius: 50%;
+		transition: .5s ease;
+	}
+}
+/* Footer Right */
+</style>
 </head>
 <?php
 $totale = 0;
@@ -228,11 +352,47 @@ $totale = 0;
     </div>
   </div>
 
+  <footer>
+    <div class="containr">
+        <div class="row">
 
+          <div class="column">
+            <h1>Est Buvette</h1>
+            <p><i class="fa-solid fa-location-dot"></i> Campus M'ghila, BP, 23000, Béni Mellal</p>
+            <br>
+            <p><i class="fa-solid fa-phone"></i>  +212 684768594</p>
+            <p><i class="fa-solid fa-envelope"></i>  contact@gmail.com</p>
 
+          </div>
+          <div class="column">
+            <h3>Useful Links</h4>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Menu</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Our Vision</h3>
+            <p>Provide constant growth
+                in terms of revenue and sales, and Develop innovative products
+                to meet future needs.</p>
+                <div class="icons m-20 d-flex">
+              <a href=""><i class="fa-brands fa-facebook fa-lg"></i></a>
+              <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
+              <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
 
-
-
+      </div>
+      <div class="bottom-bar">
+        <p>&copy; Copyight <b>Est Buvette</b>. All Rights Reserved</p>
+        <p> Made with &hearts;</p>
+      </div>
+    </footer>
 
 
 
