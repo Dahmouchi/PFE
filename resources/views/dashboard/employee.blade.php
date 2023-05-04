@@ -182,8 +182,8 @@ Employees
           </form>
         </div>  
       </div>
-      <script>
-      </script>
+      <script src="{{asset('jsFolder/all.min.js')}}"></script>
+      <script src="{{asset('jsFolder/master2.js')}}"></script>
     @endsection
 </body>
 </html>
