@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    
+
   </head>
   <body>
     <?php $notification=0; ?>
@@ -75,9 +75,7 @@
               <i class="fa-solid fa-moon "></i>
             </span>
             <span class="notification p-relative p-10 ml-10" >
-                <i class="fa-regular fa-bell fa-lg"></i>
-            </span>
-            <span class="p-relative" >
+            <i class="fa-solid fa-bell fa-xl"></i>
                 <div class="quantity"><?php echo $notification; ?></div>
             </span>
 
