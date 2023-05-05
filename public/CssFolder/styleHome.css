@@ -456,15 +456,9 @@ footer {
 	color: white;
 }
 footer .containr{
-	max-width: 75%;
+	max-width: 80%;
 	margin: auto;
 	font-size: 16px;
-}
-
-footer .containr .row{
-	display: flex;
-	flex-wrap: wrap;
-	
 }
 footer .containr .row .column{
 	width: 31%;
@@ -475,7 +469,7 @@ footer .containr .row{
 	display: flex;
 	flex-wrap: wrap;
 	padding: 10px 15px;
-	
+
 }
 footer p{
 	color: white;
@@ -548,15 +542,31 @@ footer .containr .row .column ul li a:hover{
 @media (max-width: 767px){
 	footer .containr .row .column{
 		margin-bottom: 30px;
+		width: 100%;
+		padding: 25px;
+	}
+
+	footer .containr{
+		max-width: 100%;
+		margin: auto;
+	}
+	
+	footer .containr .row .column h1{
+		font-size: 27px;
 	}
 }
 @media (max-width: 574px){
 	footer .containr .row .column{
 		width: 100%;
 		margin-bottom: 30px;
+		justify-content: center;
 	}
 	footer .containr .row .column h1{
 		font-size: 25px;
+	}
+	footer .containr{
+		max-width: 60%;
+		margin: auto;
 	}
 	footer .containr .row .column .icons a{
 		background-color: #ccc;
@@ -568,6 +578,18 @@ footer .containr .row .column ul li a:hover{
 	}
 }
 /* Footer Right */
+
+#myBtn{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 20px;
+	background-color: var(--main-color1);
+	border-radius: 50%;
+	cursor: pointer;
+	transition: .2s ease;
+}
+
 
 /* Keyframes */
 @keyframes hamburger_puls {

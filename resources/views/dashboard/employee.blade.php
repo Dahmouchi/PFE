@@ -109,7 +109,7 @@ Employees
                 <div class="emp-info between-flex">
                     <span class="">Joined {{$data->joind}}</span>
                     <div class="d-flex">
-                        <button class="rad-6" onclick="open_form()" id="edit-show"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="rad-6 edit-show"><i class="fa-solid fa-pen-to-square"></i></button>
                         <form action="{{Route('empdestroy',$data->id)}}" method="Post">
                             @csrf
                             <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
@@ -117,14 +117,70 @@ Employees
                     </div>
                 </div>
             </div>
+              <!-- Trigger/Open The Modal -->
 
-        @endforeach
 
-  </div>
+      <!-- The Modal -->
+      <div  class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content main-form p-20 bg-white rad-10">
+
+          <div class="head-close d-flex">
+            <h2>Employee Update</h2>
+            <div class="close">&times;</div>
+
+          </div>
+          <form action="" method="Post" enctype="multipart/form-data">
+            @csrf
+              <div class="row">
+              <div class="column">
+                  <label for="" class="size-14 c-grey d-block mb-5">Date of entry </label>
+                  <input required  name="joind" type="date" class="no-border p-10 rad-6 d-block full-w border-ccc" >
+              </div>
+
+              <div class="column">
+                <label for="" class="size-14 c-grey d-block mb-5">Full Name</label>
+                <input required  type="text" name="fullname" value="{{$data->fullName}}" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="First/Second Name">
+            </div>
+
+              <div class=" column">
+                  <label for="" class="size-14 c-grey d-block mb-5">Gender</label>
+                  <select required name="gender"  class="no-border p-10 rad-6 d-block full-w border-ccc" >
+                    <option value="">-- Please Select an Option --</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+              </div>
+
+              <div class=" column">
+                  <label for="" class="size-14 c-grey d-block mb-5">Date Of Birth</label>
+                  <input required  name="date" type="date" class="no-border p-10 rad-6 d-block full-w border-ccc">
+              </div>
+
+              <div class="mb-15 column">
+                  <label for="" class="size-14 c-grey d-block mb-5">Email</label>
+                  <input required  name="email" type="email" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="employee@gmail.com">
+              </div>
+              <div class="column">
+                <label for="" class="size-15 c-grey d-block mb-5">Image</label>
+                <input required  name="image" type="file" class="no-border p-10 rad-6 d-block full-w border-ccc" >
+              </div>
+            </div>
+              <div class="ord-btn mt-5">
+                <button type="submit" class="rad-6 add padbtn-mbl"><i class="fa-solid fa-pen-to-square"></i><span> Edit</span></button>
+              </div>
+
+          </form>
+        </div>
       </div>
 
-    </section>
+            @endforeach
+    </div>
+
+
+
+
+
 
     @endsection
-</body>
-</html>

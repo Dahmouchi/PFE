@@ -75,10 +75,8 @@
               <i class="fa-solid fa-moon "></i>
             </span>
             <span class="notification p-relative p-10 ml-10" >
-                <i class="fa-regular fa-bell fa-lg"></i>
-            </span>
-            <span class="p-relative" >
-                <div class="quantity"><?php echo $notification; ?></div>
+              <i class="fa-solid fa-bell fa-xl"></i>
+              <div class="quantity"><?php echo $notification; ?></div>
             </span>
 
             <div class="sous-menu p-relative d-flex al-center p-10">

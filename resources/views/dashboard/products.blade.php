@@ -54,8 +54,7 @@ Products
       </div>
       <!-- End Of form  -->
       <!-- start of table  -->
-        <br>
-        <div class="table-section bg-white rad-10 txtc-mobile block-mobile p-relative p-20">
+        <div class="table-section m-10-20 bg-white rad-10 txtc-mobile block-mobile p-relative p-20">
           <div class="title-btn d-flex between-flex">
             <h2 class="p-10 mb-5 title-size">Products Liste</h2>
 
@@ -80,12 +79,12 @@ Products
                 <td>{{$data->price}}</td>
                 <td>{{$data->description}}</td>
                 <td>
-                 <form action="{{Route('products.destroy',$data->id)}}" method="POST">
-                    @method('DELETE')
-                    @csrf
                     <button class="rad-6"><i class="fa-solid fa-pen-to-square"></i></button>
-                    <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
-                 </form>
+                    <form action="{{Route('products.destroy',$data->id)}}" method="POST">
+                        @method('DELETE')
+                        @csrf
+                        <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
+                    </form>
                 </td>
               </tr>
               @endforeach
