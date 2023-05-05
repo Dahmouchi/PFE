@@ -645,4 +645,8 @@ input:checked + .slider:before {
   text-decoration: none;
   cursor: pointer;
 }
+<<<<<<< HEAD
 /* End Modal Form */
+=======
+/* End Modal Form */
+>>>>>>> 683e812b614ab38b3e69cfe1a9bdd62093b7813a

@@ -142,3 +142,13 @@
     </div>
   </section>
   <!-- End Contact Section -->
+<<<<<<< HEAD
+=======
+  
+  
+  <script src="{{asset('jsFolder/all.min.js')}}"></script>
+<script src="{{asset('jsFolder/master2.js')}}"></script>
+</body>
+
+</html>
+>>>>>>> 683e812b614ab38b3e69cfe1a9bdd62093b7813a
