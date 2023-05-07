@@ -78,8 +78,8 @@ Products
                 <td>{{$data->category}}</td>
                 <td>{{$data->price}}</td>
                 <td>{{$data->description}}</td>
-                <td>
-                    <button class="rad-6"><i class="fa-solid fa-pen-to-square"></i></button>
+
+                    <button class="rad-6 editProduct"><i class="fa-solid fa-pen-to-square"></i></button>
                     <form action="{{Route('products.destroy',$data->id)}}" method="POST">
                         @method('DELETE')
                         @csrf
@@ -87,6 +87,60 @@ Products
                     </form>
                 </td>
               </tr>
+                  <!-- Trigger/Open The Modal -->
+
+
+      <!-- The Modal -->
+      <div class="modalproduct">
+
+        <!-- Modal content -->
+        <div class="modal-content main-form p-20 bg-white rad-10">
+
+          <div class="head-close d-flex">
+            <h2>Employee Update</h2>
+            <div class="closeProduct">&times;</div>
+
+          </div>
+          <form action="{{Route('update',$data->id)}}" method="Post" enctype="multipart/form-data">
+            @csrf
+              <div class="row">
+                <div class="column">
+                   <center><img src="{{asset('images/brakfast.jpg')}}" width="100px" height="80px" alt=""></center>
+                </div>
+              <div class="column">
+                  <label for="" class="size-14 c-grey d-block mb-5">Title</label>
+                  <input required name="title" type="text"  class="no-border p-10 rad-6 d-block full-w border-ccc" >
+              </div>
+
+
+              <div class=" column">
+                  <label for="" class="size-14 c-grey d-block mb-5">Category</label>
+                  <select required name="category" class="no-border p-10 rad-6 d-block full-w border-ccc" >
+                    <option value="">-- Please Select an Option --</option>
+                    <option value="food">foods</option>
+                    <option value="drink">drinks</option>
+                  </select>
+              </div>
+
+              <div class=" column">
+                  <label for="" class="size-14 c-grey d-block mb-5">Price</label>
+                  <input required name="price"  type="number" class="no-border p-10 rad-6 d-block full-w border-ccc">
+              </div>
+
+              <div class="mb-15 column">
+                  <label for="" class="size-14 c-grey d-block mb-5">Description</label>
+                  <input required name="description"  type="email" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="employee@gmail.com">
+              </div>
+
+            </div>
+              <div class="ord-btn mt-5">
+                <button type="submit" class="rad-6 add padbtn-mbl"><i class="fa-solid fa-pen-to-square"></i><span> Edit</span></button>
+              </div>
+
+          </form>
+        </div>
+      </div>
+
               @endforeach
             </tbody>
           </table>

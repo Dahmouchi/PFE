@@ -50,6 +50,33 @@ window.onclick = function(event) {
   }
 }
 }
+//product  modal
+let modalP = document.getElementsByClassName("modalproduct");
+let btnP = document.getElementsByClassName("editProduct");
+let spanP = document.getElementsByClassName("closeProduct");
+for (let i = 0; i < btnP.length; i++) {
+btnP[i].onclick = function() {
+    modalP[i].style.display = "block";
+}
+
+}
+
+for (let i = 0; i < spanP.length; i++) {
+spanP[i].onclick = function() {
+  for (let i = 0; i < modalP.length; i++) {
+    modalP[i].style.display = "none";
+}
+}
+
+}
+
+// When the user clicks anywhere outside of the modal, close it
+for (let i = 0; i < modalP.length; i++) {
+window.onclick = function(event) {
+  if (event.target == modalP[i]) {
+    modalP[i].style.display = "none";
+  }
+}}
 
 // Scrool Top
 let mybutton = document.getElementById("myBtn");
