@@ -25,12 +25,12 @@ Employees
 
               <div class="column">
                 <label for="" class="size-14 c-grey d-block mb-5">Full Name</label>
-                <input required id="" type="text" name="fullname" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="First/Second Name">
+                <input required type="text" name="fullname" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="First/Second Name">
             </div>
 
               <div class=" column">
                   <label for="" class="size-14 c-grey d-block mb-5">Gender</label>
-                  <select required name="gender" id="" class="no-border p-10 rad-6 d-block full-w border-ccc" >
+                  <select required name="gender" class="no-border p-10 rad-6 d-block full-w border-ccc" >
                     <option value="">-- Please Select an Option --</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
@@ -39,16 +39,16 @@ Employees
 
               <div class=" column">
                   <label for="" class="size-14 c-grey d-block mb-5">Date Of Birth</label>
-                  <input required id="" name="date" type="date" class="no-border p-10 rad-6 d-block full-w border-ccc">
+                  <input required name="date" type="date" class="no-border p-10 rad-6 d-block full-w border-ccc">
               </div>
 
               <div class="mb-15 column">
                   <label for="" class="size-14 c-grey d-block mb-5">Email</label>
-                  <input required id="" name="email" type="email" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="employee@gmail.com">
+                  <input required name="email" type="email" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="employee@gmail.com">
               </div>
               <div class="column">
                 <label for="" class="size-15 c-grey d-block mb-5">Image</label>
-                <input required id="" name="image" type="file" class="no-border p-10 rad-6 d-block full-w border-ccc" >
+                <input required name="image" type="file" class="no-border p-10 rad-6 d-block full-w border-ccc" >
               </div>
             </div>
               <div class="ord-btn mt-5">
@@ -111,6 +111,10 @@ Employees
                     <div class="d-flex">
                         <button  class="edit-show rad-6" ><i class="fa-solid fa-pen-to-square"></i></button>
 
+<<<<<<< HEAD
+=======
+                        <button  class="edit-show"><i class="fa-solid fa-pen-to-square"></i></button>
+>>>>>>> 309daf680cb0dd23b29efd7e7375802beaa0f6c4
                         <form action="{{Route('empdestroy',$data->id)}}" method="Post">
                             @csrf
                             <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
@@ -118,11 +122,19 @@ Employees
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             @endforeach
         </div>
 
       <!-- The Modal -->
       <div class="myModal">
+=======
+            <!-- Trigger/Open The Modal -->
+
+
+      <!-- The Modal -->
+      <div class="modal">
+>>>>>>> 309daf680cb0dd23b29efd7e7375802beaa0f6c4
 
         <!-- Modal content -->
         <div class="modal-content main-form bg-white rad-10">
@@ -132,22 +144,22 @@ Employees
             <div class="close">&times;</div>
 
           </div>
-          <form action="" method="Post" enctype="multipart/form-data">
+          <form action="{{Route('update',$data->id)}}" method="Post" enctype="multipart/form-data">
             @csrf
               <div class="row">
               <div class="column">
                   <label for="" class="size-14 c-grey d-block mb-5">Date of entry </label>
-                  <input required id="joind" name="joind" type="date" class="no-border p-10 rad-6 d-block full-w border-ccc" >
+                  <input required name="joind" type="date" value="{{$data->joind}}" class="no-border p-10 rad-6 d-block full-w border-ccc" >
               </div>
 
               <div class="column">
                 <label for="" class="size-14 c-grey d-block mb-5">Full Name</label>
-                <input required id="" type="text" name="fullname" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="First/Second Name">
+                <input required type="text" name="fullname" value="{{$data->fullName}}" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="First/Second Name">
             </div>
 
               <div class=" column">
                   <label for="" class="size-14 c-grey d-block mb-5">Gender</label>
-                  <select required name="gender" id="" class="no-border p-10 rad-6 d-block full-w border-ccc" >
+                  <select required name="gender" class="no-border p-10 rad-6 d-block full-w border-ccc" >
                     <option value="">-- Please Select an Option --</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
@@ -156,17 +168,14 @@ Employees
 
               <div class=" column">
                   <label for="" class="size-14 c-grey d-block mb-5">Date Of Birth</label>
-                  <input required id="" name="date" type="date" class="no-border p-10 rad-6 d-block full-w border-ccc">
+                  <input required name="date" value="{{$data->date}}" type="date" class="no-border p-10 rad-6 d-block full-w border-ccc">
               </div>
 
               <div class="mb-15 column">
                   <label for="" class="size-14 c-grey d-block mb-5">Email</label>
-                  <input required id="" name="email" type="email" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="employee@gmail.com">
+                  <input required name="email" value="{{$data->email}}" type="email" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="employee@gmail.com">
               </div>
-              <div class="column">
-                <label for="" class="size-15 c-grey d-block mb-5">Image</label>
-                <input required id="" name="image" type="file" class="no-border p-10 rad-6 d-block full-w border-ccc" >
-              </div>
+             
             </div>
               <div class="ord-btn mt-5">
                 <button type="submit" class="rad-6 add padbtn-mbl"><i class="fa-solid fa-pen-to-square"></i><span> Edit</span></button>
@@ -175,6 +184,9 @@ Employees
           </form>
         </div>
       </div>
-      <script src="{{asset('jsFolder/all.min.js')}}"></script>
-      <script src="{{asset('jsFolder/master2.js')}}"></script>
+            @endforeach
+        </div>
+
+
+
     @endsection
