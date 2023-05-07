@@ -15,7 +15,7 @@ Products
 
       <!-- Start of form -->
 
-      <div class="main-form m-10-20 p-20 bg-white rad-10">
+      <div class="main-form m-10-20 bg-white rad-10">
           <h2>Product Update</h2>
           <p class="mt-0 mb-15 c-grey size-14 ">Add Our New Product Here</p>
           <form action="{{Route('products.store')}}" method="Post" enctype="multipart/form-data">

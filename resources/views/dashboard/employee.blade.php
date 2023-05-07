@@ -12,7 +12,7 @@ Employees
         <!-- end of search -->
 
         <!-- Start of form -->
-        <div class="main-form m-10-20 p-20 bg-white rad-10">
+        <div class="main-form m-10-20 bg-white rad-10">
           <h2>Employee Update</h2>
           <p class="mt-0 mb-15 c-grey size-14 ">Add New Employee Here</p>
           <form action="{{Route('empStore')}}" method="Post" enctype="multipart/form-data">
@@ -94,7 +94,7 @@ Employees
         </div>
         <!-- End employes Table -->
 
-        <div class="employes-page di-grid m-20 gap-20">
+        <div class="employes-page di-grid gap-20">
             @foreach ($emp as $data)
             <div class="employe bg-white rad-6 p-20 p-relative">
                 <div class="contact">
@@ -109,7 +109,7 @@ Employees
                 <div class="emp-info between-flex">
                     <span class="">Joined {{$data->joind}}</span>
                     <div class="d-flex">
-                        <button class="rad-6" id="edit-show"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="edit-show rad-6" ><i class="fa-solid fa-pen-to-square"></i></button>
                         <form action="{{Route('empdestroy',$data->id)}}" method="Post">
                             @csrf
                             <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
@@ -125,14 +125,11 @@ Employees
 
     </section>
 
-      <!-- Trigger/Open The Modal -->
-      
-
       <!-- The Modal -->
-      <div id="myModal" class="modal">
+      <div class="myModal">
 
         <!-- Modal content -->
-        <div class="modal-content main-form p-20 bg-white rad-10">
+        <div class="modal-content main-form bg-white rad-10">
           
           <div class="head-close d-flex">
             <h2>Employee Update</h2>
