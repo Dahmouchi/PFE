@@ -23,9 +23,9 @@ const navMenu = document.querySelectorAll('.container .shuffle li a').forEach(li
 
 // Modal Form( Pop Up)
 // Get the modal
-let modal = document.getElementsByClassName("myModal")[0];
-let btn = document.getElementsByClassName("edit-show")[0];
-let span = document.getElementsByClassName("close")[0];
+let modal = document.querySelector(".myModal");
+let btn = document.querySelectorAll(".edit-show");
+let span = document.querySelector(".close");
 
 btn.onclick = function() {
   modal.style.display = "block";

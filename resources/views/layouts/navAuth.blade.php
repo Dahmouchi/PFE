@@ -95,9 +95,8 @@
             <p>&copy; Copyight <b>Est Buvette</b>. All Rights Reserved</p>
             <p> Made with &hearts;</p>
           </div>
-        </footer>
-
-      </body>
+      </footer>
+      <span class=""></span>
     <!--end footer-->
 
 </body>

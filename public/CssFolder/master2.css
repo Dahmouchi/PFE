@@ -632,8 +632,10 @@ input:checked + .slider:before {
   border: 1px solid #888;
   width: 50%;
   animation-name: animatetop;
-  animation-duration: 0.5s
+  animation-duration: 0.5s;
+  border: 2px solid var(--second-color1);
 }
+
 /* Add Animation */
 @keyframes animatetop {
   from {top: -300px; opacity: 0}
@@ -656,13 +658,9 @@ input:checked + .slider:before {
   text-decoration: none;
   cursor: pointer;
 }
-<<<<<<< HEAD
-
 @media (max-width: 561px) {
   .myModal{
     padding-top: 0px;
   }
 }
 /* End Modal Form */
-=======
->>>>>>> ad5cf33b98dc742c3e353575c4b39a72a8030e55
