@@ -23,22 +23,32 @@ const navMenu = document.querySelectorAll('.container .shuffle li a').forEach(li
 
 // Modal Form( Pop Up)
 // Get the modal
-let modal = document.getElementById("myModal");
-let btn = document.getElementById("edit-show");
-let span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
+let modal = document.getElementsByClassName("modal");
+let btn = document.getElementsByClassName("edit-show");
+let span = document.getElementsByClassName("close");
+for (let i = 0; i < btn.length; i++) {
+btn[i].onclick = function() {
+    modal[i].style.display = "block";
 }
-span.onclick = function() {
-  modal.style.display = "none";
+
+}
+
+for (let i = 0; i < span.length; i++) {
+span[i].onclick = function() {
+  for (let i = 0; i < modal.length; i++) {
+    modal[i].style.display = "none";
+}
+}
+
 }
 
 // When the user clicks anywhere outside of the modal, close it
+for (let i = 0; i < modal.length; i++) {
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modal[i]) {
+    modal[i].style.display = "none";
   }
+}
 }
 
 // Scrool Top

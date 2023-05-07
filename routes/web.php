@@ -64,6 +64,8 @@ Route::prefix('admin')->middleware('auth','isAdmin')->group(function(){
     Route::post('/commandes/{client}' , [AdminController::class ,'serch'])->name('serch');
     Route::post('/employees' , [EmployeeController::class ,'store'])->name('empStore');
     Route::post('/destroy/{id}' , [EmployeeController::class ,'destroyEmp'])->name('empdestroy');
+    Route::post('/update/{id}' , [EmployeeController::class ,'update'])->name('update');
+
 
 });
 
