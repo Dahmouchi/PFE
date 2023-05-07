@@ -23,13 +23,8 @@ const navMenu = document.querySelectorAll('.container .shuffle li a').forEach(li
 
 // Modal Form( Pop Up)
 // Get the modal
-<<<<<<< HEAD
-let modal = document.getElementsByClassName("modal")[0];
-let btn = document.getElementsByClassName("edit-show")[0];
-=======
 let modal = document.getElementById("myModal");
 let btn = document.getElementById("edit-show");
->>>>>>> 683e812b614ab38b3e69cfe1a9bdd62093b7813a
 let span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
@@ -61,12 +56,7 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-<<<<<<< HEAD
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-=======
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0;
-}
->>>>>>> 683e812b614ab38b3e69cfe1a9bdd62093b7813a
+
