@@ -7,6 +7,7 @@
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
 </head>
 <body>
 	<img class="wave" src="images/wave1.png">
@@ -55,6 +56,8 @@
             </form>
         </div>
     </div>
+
     <script type="text/javascript" src="jsFolder/adminLogin.js"></script>
 </body>
+
 </html>

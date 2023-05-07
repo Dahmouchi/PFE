@@ -109,7 +109,12 @@ Employees
                 <div class="emp-info between-flex">
                     <span class="">Joined {{$data->joind}}</span>
                     <div class="d-flex">
+<<<<<<< HEAD
                         <button class="edit-show rad-6" ><i class="fa-solid fa-pen-to-square"></i></button>
+=======
+
+                        <button class="rad-6" id="edit-show"><i class="fa-solid fa-pen-to-square"></i></button>
+>>>>>>> ad5cf33b98dc742c3e353575c4b39a72a8030e55
                         <form action="{{Route('empdestroy',$data->id)}}" method="Post">
                             @csrf
                             <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
@@ -117,26 +122,32 @@ Employees
                     </div>
                 </div>
             </div>
+            @endforeach
+        </div>
 
-        @endforeach
+<<<<<<< HEAD
+=======
+      <!-- Trigger/Open The Modal -->
 
-    </div>
-      </div>
 
-    </section>
-
+>>>>>>> ad5cf33b98dc742c3e353575c4b39a72a8030e55
       <!-- The Modal -->
       <div class="myModal">
 
         <!-- Modal content -->
+<<<<<<< HEAD
         <div class="modal-content main-form bg-white rad-10">
           
+=======
+        <div class="modal-content main-form p-20 bg-white rad-10">
+
+>>>>>>> ad5cf33b98dc742c3e353575c4b39a72a8030e55
           <div class="head-close d-flex">
             <h2>Employee Update</h2>
             <div class="close">&times;</div>
-            
+
           </div>
-          <form action="{{Route('empStore')}}" method="Post" enctype="multipart/form-data">
+          <form action="" method="Post" enctype="multipart/form-data">
             @csrf
               <div class="row">
               <div class="column">
@@ -177,10 +188,8 @@ Employees
               </div>
 
           </form>
-        </div>  
+        </div>
       </div>
       <script src="{{asset('jsFolder/all.min.js')}}"></script>
       <script src="{{asset('jsFolder/master2.js')}}"></script>
     @endsection
-</body>
-</html>

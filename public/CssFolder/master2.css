@@ -656,6 +656,7 @@ input:checked + .slider:before {
   text-decoration: none;
   cursor: pointer;
 }
+<<<<<<< HEAD
 
 @media (max-width: 561px) {
   .myModal{
@@ -663,3 +664,5 @@ input:checked + .slider:before {
   }
 }
 /* End Modal Form */
+=======
+>>>>>>> ad5cf33b98dc742c3e353575c4b39a72a8030e55

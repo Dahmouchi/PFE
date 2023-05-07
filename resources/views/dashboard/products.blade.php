@@ -79,12 +79,12 @@ Products
                 <td>{{$data->price}}</td>
                 <td>{{$data->description}}</td>
                 <td>
-                 <form action="{{Route('products.destroy',$data->id)}}" method="POST">
-                    @method('DELETE')
-                    @csrf
                     <button class="rad-6"><i class="fa-solid fa-pen-to-square"></i></button>
-                    <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
-                 </form>
+                    <form action="{{Route('products.destroy',$data->id)}}" method="POST">
+                        @method('DELETE')
+                        @csrf
+                        <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
+                    </form>
                 </td>
               </tr>
               @endforeach

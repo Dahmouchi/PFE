@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="{{asset('CssFolder/styleHome.css')}}">
-  <link rel="stylesheet" href="{{asset('CssFolder/framwork.css')}}">
-  <title>Est Buvette</title>
-</head>
-
-<body>
  @extends('layouts.nav')
-
+@section('content')
   <!-- Hero Section  -->
   <section id="hero">
     <div class="hero container">
@@ -155,6 +142,8 @@
     </div>
   </section>
   <!-- End Contact Section -->
+<<<<<<< HEAD
+=======
   
   
   <script src="{{asset('jsFolder/all.min.js')}}"></script>
@@ -162,3 +151,4 @@
 </body>
 
 </html>
+>>>>>>> 683e812b614ab38b3e69cfe1a9bdd62093b7813a
