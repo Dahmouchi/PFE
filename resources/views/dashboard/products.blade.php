@@ -78,13 +78,15 @@ Products
                 <td>{{$data->category}}</td>
                 <td>{{$data->price}}</td>
                 <td>{{$data->description}}</td>
-
-                    <button class="rad-6 editProduct"><i class="fa-solid fa-pen-to-square"></i></button>
+                <td>
+                   <div class="div" style="display: flex; justify-content:center ;">
+                    <button class="rad-6 editProduct mr-5"><i class="fa-solid fa-pen-to-square"></i></button>
                     <form action="{{Route('products.destroy',$data->id)}}" method="POST">
                         @method('DELETE')
                         @csrf
                         <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
                     </form>
+                   </div>
                 </td>
               </tr>
                   <!-- Trigger/Open The Modal -->
@@ -101,15 +103,16 @@ Products
             <div class="closeProduct">&times;</div>
 
           </div>
-          <form action="{{Route('update',$data->id)}}" method="Post" enctype="multipart/form-data">
+          <form action="{{Route('products.update',$data->id)}}" method="Post" enctype="multipart/form-data">
             @csrf
+            @method('PUT')
               <div class="row">
                 <div class="column">
-                   <center><img src="{{asset('images/brakfast.jpg')}}" width="100px" height="80px" alt=""></center>
+                   <center><img src="{{asset('images/productImage/'.$data->image)}}" width="100px" height="80px" alt=""></center>
                 </div>
               <div class="column">
                   <label for="" class="size-14 c-grey d-block mb-5">Title</label>
-                  <input required name="title" type="text"  class="no-border p-10 rad-6 d-block full-w border-ccc" >
+                  <input required name="title" value="{{$data->ProductName}}" type="text"  class="no-border p-10 rad-6 d-block full-w border-ccc" >
               </div>
 
 
@@ -124,12 +127,12 @@ Products
 
               <div class=" column">
                   <label for="" class="size-14 c-grey d-block mb-5">Price</label>
-                  <input required name="price"  type="number" class="no-border p-10 rad-6 d-block full-w border-ccc">
+                  <input required name="price" value="{{$data->price}}"  type="number" class="no-border p-10 rad-6 d-block full-w border-ccc">
               </div>
 
               <div class="mb-15 column">
                   <label for="" class="size-14 c-grey d-block mb-5">Description</label>
-                  <input required name="description"  type="email" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="employee@gmail.com">
+                  <input required name="description" value="{{$data->description}}"  type="text" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="employee@gmail.com">
               </div>
 
             </div>

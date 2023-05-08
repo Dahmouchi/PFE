@@ -21,7 +21,7 @@ class AdminController extends Controller
     {
         $product=Product::all();
         $products=Cart::all();
-        $orders=Order::all();
+        $orders=Order::all()->sortDesc();
         $user=User::all();
         return view('dashboard.dashboard',compact('orders','products','product','user'));
     }
