@@ -135,6 +135,9 @@ Employees
           <form action="{{Route('update',$data->id)}}" method="Post" enctype="multipart/form-data">
             @csrf
               <div class="row">
+                <div class="column">
+                    <center><img src="{{asset('images/EmployeeImage/'.$data->image)}}" class="half-rad w-100 h-100" alt=""></center>
+                 </div>
               <div class="column">
                   <label for="" class="size-14 c-grey d-block mb-5">Date of entry </label>
                   <input required name="joind" type="date" value="{{$data->joind}}" class="no-border p-10 rad-6 d-block full-w border-ccc" >
@@ -163,7 +166,7 @@ Employees
                   <label for="" class="size-14 c-grey d-block mb-5">Email</label>
                   <input required name="email" value="{{$data->email}}" type="email" class="no-border p-10 rad-6 d-block full-w border-ccc" placeholder="employee@gmail.com">
               </div>
-             
+
             </div>
               <div class="ord-btn mt-5">
                 <button type="submit" class="rad-6 add padbtn-mbl"><i class="fa-solid fa-pen-to-square"></i><span> Edit</span></button>

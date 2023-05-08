@@ -71,9 +71,21 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request,$id)
     {
-
+        $request ->validate([
+            'title'=>'required',
+            'description'=>'required',
+            'price'=>'required',
+            'category'=>'required',
+        ]);
+        $product=Product::findorFail($id);
+        $product->ProductName=$request->title;
+        $product->description=$request->description;
+        $product->Price=$request->price;
+        $product->category=$request->category;
+        $product->save();
+        return redirect()->back();
     }
 
     /**

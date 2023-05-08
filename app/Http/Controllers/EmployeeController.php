@@ -15,11 +15,6 @@ class EmployeeController extends Controller
         $emp->email=$request->email;
         $emp->gender=$request->gender;
         $emp->joind=$request->joind;
-        $file=$request->image;
-        $extension=$file->getClientOriginalExtension();
-        $filename=time().'.'.$extension;
-        $file->move('images/EmployeeImage/',$filename);
-        $emp->image=$filename;
         $emp->save();
         return redirect()->back();
 
