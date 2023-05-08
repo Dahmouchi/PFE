@@ -78,13 +78,15 @@ Products
                 <td>{{$data->category}}</td>
                 <td>{{$data->price}}</td>
                 <td>{{$data->description}}</td>
-
-                    <button class="rad-6 editProduct"><i class="fa-solid fa-pen-to-square"></i></button>
-                    <form action="{{Route('products.destroy',$data->id)}}" method="POST">
-                        @method('DELETE')
-                        @csrf
-                        <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
-                    </form>
+                <td>
+                    <div class="d-flex " style="justify-content: center;">
+                      <button class="rad-6 editProduct mr-5"><i class="fa-solid fa-pen-to-square"></i></button>
+                      <form action="{{Route('products.destroy',$data->id)}}" method="POST">
+                          @method('DELETE')
+                          @csrf
+                          <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
+                      </form>
+                    </div>
                 </td>
               </tr>
                   <!-- Trigger/Open The Modal -->

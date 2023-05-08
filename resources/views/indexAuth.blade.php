@@ -141,6 +141,7 @@
       </div>
     </div>
   </section>
+  <span class="scroll-back" onclick="topFunction()"><i class="fa-solid fa-chevron-up fa-2xl"></i></span>
   <!-- End Contact Section -->
-
+  <script src="{{asset('jsFolder/master2.js')}}"></script>
   @endsection

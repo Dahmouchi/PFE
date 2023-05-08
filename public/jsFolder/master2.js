@@ -26,20 +26,19 @@ const navMenu = document.querySelectorAll('.container .shuffle li a').forEach(li
 let modal = document.getElementsByClassName("modal");
 let btn = document.getElementsByClassName("edit-show");
 let span = document.getElementsByClassName("close");
-for (let i = 0; i < btn.length; i++) {
-btn[i].onclick = function() {
-    modal[i].style.display = "block";
-}
 
+for (let i = 0; i < btn.length; i++) {
+  btn[i].onclick = function() {
+      modal[i].style.display = "block";
+  }
 }
 
 for (let i = 0; i < span.length; i++) {
-span[i].onclick = function() {
-  for (let i = 0; i < modal.length; i++) {
-    modal[i].style.display = "none";
-}
-}
-
+  span[i].onclick = function() {
+    for (let i = 0; i < modal.length; i++) {
+      modal[i].style.display = "none";
+    }
+  }
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -79,7 +78,7 @@ window.onclick = function(event) {
 }}
 
 // Scrool Top
-let mybutton = document.getElementById("myBtn");
+let mybutton = document.getElementById("scroll-back");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 

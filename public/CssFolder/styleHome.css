@@ -760,3 +760,18 @@ footer .containr .row .column ul li a:hover{
 	}
 }
 /* End  Media Query For Desktop */
+/* Scroll Back */
+.scroll-back{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: var(--main-color1);
+	padding: 20px;
+	border-radius: 50%;
+	transition: all .3s ease-in;
+	cursor: pointer;
+}
+.scroll-back:hover{
+	background-color: var(--main-color2);
+	color: white;
+}
