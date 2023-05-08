@@ -82,7 +82,6 @@
             </div>
           </div>
         </div>
-
       </div>
       <div class="bottom-bar">
         <p>&copy; Copyight <b>Est Buvette</b>. All Rights Reserved</p>
@@ -90,8 +89,8 @@
       </div>
     </footer>
 <!--end footer-->
-
+    <span class="scroll-back" onclick="topFunction()"><i class="fa-solid fa-chevron-up fa-2xl"></i></span>
+    <script src="{{asset('jsFolder/javaScript.js')}}"></script>
 </body>
 </html>
 
-  <script src="{{asset('jsFolder/javaScript.js')}}"></script>

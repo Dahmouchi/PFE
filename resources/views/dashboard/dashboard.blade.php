@@ -112,7 +112,7 @@ $client=0;
                       <form  class="mr-5" method="POST" action="{{Route('orders.update',$data->id)}}">
                         @method('PATCH')
                         @csrf
-                      <button class="rad-6 eye" style="margin-left: 20px; width:70px;"><i class="fa-solid fa-check" ></i></button>
+                      <button class="rad-6 eye" style="margin-left: 20px; width:70px; background-color: #38c870;"><i class="fa-solid fa-check" ></i></button>
                       </form>
                       @endif
                       </div>

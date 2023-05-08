@@ -110,7 +110,7 @@ Employees
                     <span class="">Joined {{$data->joind}}</span>
                     <div class="d-flex">
 
-                        <button  class="edit-show"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button  class="edit-show rad-6"><i class="fa-solid fa-pen-to-square"></i></button>
                         <form action="{{Route('empdestroy',$data->id)}}" method="Post">
                             @csrf
                             <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
