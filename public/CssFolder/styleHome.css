@@ -128,13 +128,13 @@ p {
 	left: 0%;
 }
 #header .nav-list ul a {
-	font-size: 2.5rem;
-	font-weight: 500;
+	font-size: 12px;
+	font-weight: 300;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
-	padding: 20px;
+	padding: 10px;
 	display: block;
 	transition: var(--main-transition) ease;
 }
@@ -526,7 +526,7 @@ footer .containr .row .column ul li:not(:last-child){
 footer .containr .row .column ul li a{
 	color: #ddd;
 	transition: var(--main-transition);
-	
+
 }
 footer .containr .row .column ul li a:hover{
 	color: white;
@@ -550,7 +550,7 @@ footer .containr .row .column ul li a:hover{
 		max-width: 100%;
 		margin: auto;
 	}
-	
+
 	footer .containr .row .column h1{
 		font-size: 27px;
 	}

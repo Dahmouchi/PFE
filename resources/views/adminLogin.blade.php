@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Login Page</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
 	<link rel="stylesheet" type="text/css" href="Cssfolder/adminLogin.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
@@ -10,15 +12,19 @@
 
 </head>
 <body>
+
 	<img class="wave" src="images/wave1.png">
+    <a href="{{url('/')}}" class ="logo"><img src="images/la-gauche.png" alt="" width="50" height="50"></a>
 	<div class="container">
+        <img src="images/logo.png" alt="" width="220" height="220" class="logo1">
 		<div class="img">
-			<img src="images/bg.svg">
+                <img src="images/bj.png">
+
 		</div>
 		<div class="login-content">
 			<form method="POST" action="{{ route('login') }}">
                 @csrf
-				<img src="images/avatar.svg">
+				<img src="images/avatar.png">
 				<h2 class="title">Welcome</h2>
            		<div class="input-div one">
            		   <div class="i">

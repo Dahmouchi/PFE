@@ -17,7 +17,15 @@ body{
 	z-index: -1;
 
 }
+.logo{
+    position: absolute;
+margin: 25px;
+}
+.logo1{
 
+    position: absolute;
+    right:0;
+}
 .container{
     width: 100vw;
     height: 100vh;
@@ -104,7 +112,7 @@ form{
 	bottom: -2px;
 	width: 0%;
 	height: 2px;
-	background-color: #38d39f;
+	background-color: #c7d253;
 	transition: .4s;
 }
 
@@ -162,24 +170,19 @@ a:hover{
 }
 
 .btn{
-	display: block;
-	width: 100%;
-	height: 50px;
-	border-radius: 25px;
-	outline: none;
-	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
-	background-size: 200%;
-	font-size: 1.2rem;
-	color: #fff;
-	font-family: 'Poppins', sans-serif;
-	text-transform: uppercase;
-	margin: 1rem 0;
+	background-color:#001f2c;
+     width:100%;
+     height:60px;
+     border-radius:5px;
+     color:aliceblue;
+     margin-top:10px;
 	cursor: pointer;
 	transition: .5s;
 }
 .btn:hover{
+    color: #001f2c;
 	background-position: right;
+    background-color: #bcc760;
 }
 
 
