@@ -7,7 +7,7 @@ Settings
 @section('content')
         <!-- start of search -->
         <div class="search p-relative">
-          <input type="search" class="p-10 m-20" placeholder="Search">
+          <input type="search" class="p-10 m-20 bg-white" placeholder="Search">
         </div>
         <!-- end of search -->
 

@@ -75,11 +75,7 @@ ul {
 }
 
 .sidebar ul li a {
-  transition: 0.2s all ease-in;
-}
-
-.sidebar ul li a {
-  transition: 0.2s all ease-in;
+  transition: all .4s ease;
 }
 
 .sidebar ul li a:hover{
@@ -572,7 +568,8 @@ input:checked + .slider:before {
   font-weight: 400;
   font-size: 16px;
   border-radius: 5px;
-  background-color: #fafafa;
+  background-color: #eeeeee;
+  transition: all .3s ease;
 }
 
 .main-form form .row textarea {
@@ -606,7 +603,8 @@ input:checked + .slider:before {
 /* End of Products Page */
 
 /* Start Modal Form */
-.modal {
+.modal,
+.modalproduct {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -621,33 +619,22 @@ input:checked + .slider:before {
 }
 
 
-.modal-content {
+.modal-content,
+.modalproduct-content {
   background-color: #f1f5f9;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
+  border: 2px solid var(--second-color1);
+  animation-name: animatetop;
+  animation-duration: 0.5s;
+  padding: 30px;
 }
-.modalproduct {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-.modalproduct-content {
-    background-color: #f1f5f9;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%;
-  }
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
 
 .head-close{
   justify-content: space-between;
@@ -680,4 +667,12 @@ input:checked + .slider:before {
     color: var(--second-color1);
     text-decoration: none;
     cursor: pointer;
+  }
+  input, textarea select{
+    background-color: #eeeeee;
+    transition: all .3s ease;
+  }
+  input:focus, textarea:hover select:focus{
+    outline: none;
+    border-color: var(--second-color2);
   }

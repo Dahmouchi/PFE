@@ -9,13 +9,13 @@ Products
         <!-- End Head -->
         <!-- start of search -->
         <div class="search p-relative">
-          <input type="search" class="p-10 m-20" placeholder="Search">
+          <input type="search" class="p-10 m-20 bg-white" placeholder="Search">
       </div>
       <!-- end of search -->
 
       <!-- Start of form -->
 
-      <div class="main-form m-10-20 p-20 bg-white rad-10">
+      <div class="main-form m-10-20 p-30 bg-white rad-10">
           <h2>Product Update</h2>
           <p class="mt-0 mb-15 c-grey size-14 ">Add Our New Product Here</p>
           <form action="{{Route('products.store')}}" method="Post" enctype="multipart/form-data">
@@ -79,16 +79,6 @@ Products
                 <td>{{$data->price}}</td>
                 <td>{{$data->description}}</td>
                 <td>
-<<<<<<< HEAD
-                    <div class="d-flex " style="justify-content: center;">
-                      <button class="rad-6 editProduct mr-5"><i class="fa-solid fa-pen-to-square"></i></button>
-                      <form action="{{Route('products.destroy',$data->id)}}" method="POST">
-                          @method('DELETE')
-                          @csrf
-                          <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
-                      </form>
-                    </div>
-=======
                    <div class="div" style="display: flex; justify-content:center ;">
                     <button class="rad-6 editProduct mr-5"><i class="fa-solid fa-pen-to-square"></i></button>
                     <form action="{{Route('products.destroy',$data->id)}}" method="POST">
@@ -97,17 +87,14 @@ Products
                         <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
                     </form>
                    </div>
->>>>>>> 777cfef04700f91a11432e88d94aed03465ed954
                 </td>
               </tr>
-                  <!-- Trigger/Open The Modal -->
-
-
+        <!-- Trigger/Open The Modal -->
       <!-- The Modal -->
       <div class="modalproduct">
 
         <!-- Modal content -->
-        <div class="modal-content main-form p-20 bg-white rad-10">
+        <div class="modal-content main-form p-30 bg-white rad-10">
 
           <div class="head-close d-flex">
             <h2>Employee Update</h2>

@@ -7,12 +7,12 @@ Employees
 @section('content')
         <!-- start of search -->
         <div class="search p-relative">
-            <input type="search" class="p-10 m-20" placeholder="Search">
+            <input type="search" class="p-10 m-20 bg-white" placeholder="Search">
         </div>
         <!-- end of search -->
 
         <!-- Start of form -->
-        <div class="main-form m-10-20 p-20 bg-white rad-10">
+        <div class="main-form m-10-20 p-30 bg-white rad-10">
           <h2>Employee Update</h2>
           <p class="mt-0 mb-15 c-grey size-14 ">Add New Employee Here</p>
           <form action="{{Route('empStore')}}" method="Post" enctype="multipart/form-data">
@@ -125,7 +125,7 @@ Employees
       <div class="modal">
 
         <!-- Modal content -->
-        <div class="modal-content main-form p-20 bg-white rad-10">
+        <div class="modal-content main-form bg-white rad-10">
 
           <div class="head-close d-flex">
             <h2>Employee Update</h2>
