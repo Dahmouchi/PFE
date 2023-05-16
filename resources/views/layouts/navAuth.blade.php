@@ -30,6 +30,7 @@
           <ul>
             <li><a href="#" data-after="Home">Home</a></li>
             <li><a href="/products/show" data-after="Menu">Menu</a></li>
+            <li><a href="/products/show" data-after="Menu">Résérvation</a></li>
             <li><a href="#projects" data-after="Services">Services</a></li>
             <li><a href="#about" data-after="About">About</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>

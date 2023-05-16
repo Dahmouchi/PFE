@@ -10,14 +10,17 @@
 </head>
 <body>
 	<img class="wave" src="images/wave1.png">
+    <a href="{{url('/')}}" class ="logo"><img src="images/la-gauche.png" alt="" width="50" height="50"></a>
+
 	<div class="container">
+        <img src="images/logo.png" alt="" width="220" height="220" class="logo1">
 		<div class="img">
-			<img src="images/bg.svg">
+			<img src="images/bj.png">
 		</div>
 		<div class="login-content">
 			<form method="POST" action="{{ route('register') }}">
                 @csrf
-				<img src="images/avatar.svg">
+				<img src="images/avatar.png">
 				<h2 class="title">Welcome</h2>
                 <div class="input-div one">
                     <div class="i">
@@ -60,7 +63,7 @@
                  </div>
 
 
-            	<input type="submit" class="btn" value="Register">
+            	<input type="submit"  class="btn" value="Register">
                 @error('email')
                             <div class="alert alert-danger" role="alert">
                                 <strong>{{ $message }}</strong>
