@@ -8,6 +8,7 @@
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <link rel="stylesheet" href="{{asset('CssFolder/styleHome.css')}}">
   <link rel="stylesheet" href="{{asset('CssFolder/framwork.css')}}">
   <link rel="stylesheet" href="{{asset('cssFolder/all.min.css')}}" />
@@ -17,6 +18,9 @@
 =======
 >>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
 
+=======
+
+>>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
 =======
 
 >>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e

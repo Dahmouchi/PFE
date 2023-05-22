@@ -21,6 +21,7 @@
   <!-- End Hero Section  -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 <!-- Start Slider Images -->
@@ -89,6 +90,8 @@
 =======
 =======
 >>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
+=======
+>>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
   <!-- slayder Section -->
   <center><h1 class="section-title" style="margin-top:100px">Our <span>Menu</span></h1></center>
 <center><section class="full">
@@ -107,6 +110,9 @@
 <section id="projects">
     <div class="projects containernav">
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
+=======
 >>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
 =======
 >>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
@@ -173,6 +179,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
 =======
 
 
@@ -237,6 +248,7 @@
   <!-- End Contact Section -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <script src="{{asset('jsFolder/master2.js')}}"></script>
     <script type="module">
         import { tns } from "./node_modules/tiny-slider/src/tiny-slider"
@@ -273,6 +285,8 @@
 =======
 =======
 >>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
+=======
+>>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
 @section('scroll')
 <span class="scroll-back" onclick="topFunction()"><i class="fa-solid fa-chevron-up fa-2xl"></i></span>
 @endsection
@@ -280,6 +294,9 @@
 <script src="{{asset('jsFolder/master2.js')}}"></script>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
+=======
 >>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
 =======
 >>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
