@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html1">
 
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -12,13 +13,24 @@
   <link rel="stylesheet" href="{{asset('CssFolder/framwork.css')}}">
   <title>Est Buvette</title>
 </head>
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+  @yield('style')
+    <title>UniverFood</title>
+  </head>
+>>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
 
 <body>
  <!-- Header -->
  <section id="header">
-    <div class="header container">
+    <div class="header containernav">
       <div class="nav-bar">
         <div class="brand">
+            <img src="/images/logoIcon.png" alt="">
           <a href="#hero">
             <h1><span>U</span>niver<span>F</span>ood</h1>
           </a>
@@ -28,20 +40,12 @@
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="#" data-after="Home">Home</a></li>
-            <li><a href="<?php
-                if(Auth::check()){
-                    echo "/products/show";
-
-                }else {
-                    echo "/index";
-                }
-
-            ?>" data-after="Menu">Menu</a></li>
+            <li><a href="<?php if(Auth::check()) echo url('/auth');else echo url('/'); ?>" data-after="Home">Home</a></li>
+            <li><a href="{{url('/products/show')}}" data-after="Menu">Menu</a></li>
             <li><a href="#projects" data-after="Services">Services</a></li>
             <li><a href="#about" data-after="About">About</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
-            <li><a href="/index" data-after="Contact">Login/SinUp</a></li>
+            <li><a href="{{Route("log")}}" data-after="Contact">Login/SinUp</a></li>
           </ul>
         </div>
       </div>
@@ -91,8 +95,10 @@
       </div>
     </footer>
 <!--end footer-->
-    <span class="scroll-back" onclick="topFunction()"><i class="fa-solid fa-chevron-up fa-2xl"></i></span>
-    <script src="{{asset('jsFolder/javaScript.js')}}"></script>
+@yield('scroll')
 </body>
+<script src="{{asset('jsFolder/master2.js')}}"></script>
+  <script src="{{asset('jsFolder/all.min.js')}}"></script>
+  <script src="{{asset('jsFolder/javaScript.js')}}"></script>
 </html>
 

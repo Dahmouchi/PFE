@@ -1,5 +1,5 @@
 :root {
-	--main-color1: #174543;
+
 	--main-color2: aliceblue;
 	--second-color1: #D7C37A;
 	--second-color2: #303030;
@@ -13,19 +13,23 @@ body{margin-top:20px;}
 select.form-control:not([size]):not([multiple]) {
     height: 44px;
 }
+a{
+    text-decoration: none;
+}
 /*  start menu box */
 .menu-boxs {
+
 	color: white;
 	margin: auto;
 	padding: 1.3rem;
 	padding-bottom: 0;
 	text-align: center;
 	background-image: url('../images/top-bar-pattern_transparent.png');
-	background-color: var(--second-color2);
+	background-color: #1a1927;
   }
 
   .titles h2 {
-	font-size: 1.9rem;
+	font-size: 2.8rem;
 	padding-bottom: 10px;
 	text-transform: uppercase;
   }
@@ -35,48 +39,50 @@ select.form-control:not([size]):not([multiple]) {
 	color: var(--second-color1);
   }
 
-  .menu-boxs .container {
+  .menu-boxs .containers {
+
+
+    margin-top: 100px;
 	display: inline-block;
 	padding: 0 10px 30px 10px;
   }
 
-  .menu-boxs .container .shuffle {
+  .menu-boxs .containers .shuffle {
     display: flex;
     justify-content: center;
     margin: 10px auto;
-    font-size: 1.1rem;
+    font-size: 2rem;
     width: fit-content;
     padding-left: 0;
   }
 
-  .menu-boxs .container .shuffle li {
+  .menu-boxs .containers .shuffle li {
 	list-style: none;
 	padding: 13px;
 	padding-top: 10px;
 	cursor: pointer;
 	margin-left: 10px;
 	margin-right: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 	transition: .3s all ease-in-out;
   }
 
-  .menu-boxs .container .shuffle li a:is(:link, :active, :visited).active {
+  .menu-boxs .containers .shuffle li a:is(:link, :active, :visited).active {
 	  background-color: var(--second-color1);
   }
 
-  .menu-boxs .container .shuffle li:hover{
+  .menu-boxs .containers .shuffle li:hover{
 	background-color: var(--second-color1);
 	color: black;
   }
 
-  .menu-boxs .container p {
+  .menu-boxs .containers p {
 	margin: auto;
 	color: #ccc;
 	font-size: 1.1rem;
 	line-height: 1.5;
 	font-family: var(--font-family);
   }
-
   /*end menu-box*/
 
 select.form-control {
@@ -211,6 +217,10 @@ select.form-control {
     .order-table .product-item .product-thumb {
         display: none
     }
+    .brand{
+        margin-left: -10px;
+
+    }
 }
 
 .shopping-cart .product-item .product-info span,
@@ -266,6 +276,10 @@ select.form-control {
 @media screen and (max-width: 576px) {
     .wishlist-table .product-item .product-thumb {
         display: none !important
+    }
+    .brand{
+        margin-left: -10px;
+
     }
 }
 

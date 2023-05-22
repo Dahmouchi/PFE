@@ -167,14 +167,45 @@ a{
 a:hover{
 	color: #38d39f;
 }
+.btn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background-color:#001f2c;
+    width:100%;
+    height:60px;
+    border-radius:5px;
 
+    margin-top:20px;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn1 a{
+    color: white;
+    font-family: poppins;
+}
+.btn1 a:hover{
+    color: #001f2c;
+	background-position: right;
+    background-color: #bcc760;
+    text-decoration: none;
+}
+.btn1:hover{
+    color: #001f2c;
+    color: #001f2c;
+	background-position: right;
+    background-color: #bcc760;
+    text-decoration: none;
+}
 .btn{
+    font-family: poppins;
 	background-color:#001f2c;
      width:100%;
      height:60px;
      border-radius:5px;
      color:aliceblue;
-     margin-top:10px;
+     margin-top:20px;
 	cursor: pointer;
 	transition: .5s;
 }

@@ -54,10 +54,11 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show()
     {
         $products=Product::all();
         return view('produit.Menu',compact('products'));
+
     }
 
     /**

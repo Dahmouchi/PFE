@@ -38,16 +38,16 @@ Route::get('/sinUp', function () {
     return view('adminSinUp');
 })->name('sinUp');
 
-Route::get('/index', function () {
+Route::get('/Login', function () {
     return view('adminLogin');
-});
+})->name("log");
 Route::resource('cart',CartController::class);
 //user routes
 Route::resource('user',UserController::class);
 Route::resource('orders',OrderController::class);
 // product routes
 Route::resource('products',ProductController::class);
-Route::post('/addCart/{productId}', [CartController::class, 'addcart']);
+Route::post('/addCart/{productId}', [CartController::class,'addcart']);
 Route::post('/destroy/{id}', [CartController::class, 'destroy']);
 Route::post('/destroyall/{id}', [CartController::class, 'destroyall']);
 //authentification routes

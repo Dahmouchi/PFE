@@ -11,13 +11,18 @@ class CartController extends Controller
 {
     public function show()
     {
-        $carts =Cart::all();
+        if(Auth::check()){
+             $carts =Cart::all();
         return view('produit.cartproduct',compact('carts'));
+        }else{
+            return redirect()->Route("log");
+        }
+
     }
     public function addcart(Request $request,$id)
     {
 
-        if(Auth::id()){
+        if(Auth::check()){
             $user=User::find(Auth::user()->id);
             $user->cartqnt++;
             $user->save();
@@ -33,7 +38,7 @@ class CartController extends Controller
             return redirect()->back();
 
         }else{
-            return redirect('adminLogin');
+            return redirect()->Route("log");
         }
     }
     public function destroy($id)

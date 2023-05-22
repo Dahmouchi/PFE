@@ -64,6 +64,7 @@
 
 
             	<input type="submit"  class="btn" value="Register">
+
                 @error('email')
                             <div class="alert alert-danger" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -80,6 +81,7 @@
                         </div>
                 @enderror
             </form>
+
         </div>
     </div>
     <script type="text/javascript" src="jsFolder/adminLogin.js"></script>

@@ -6,12 +6,13 @@ const header = document.querySelector('.header.container');
 hamburger.addEventListener('click', () => {
 	hamburger.classList.toggle('active');
 	mobile_menu.classList.toggle('active');
+
 });
 
 document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
 	if (scroll_position > 250) {
-		header.style.backgroundColor = '#2a2a2a';
+		header.style.backgroundColor = '#D7C37A';
 	} else {
 		header.style.backgroundColor = 'transparent';
 	}
