@@ -1,6 +1,6 @@
 /* Start Menu Heading */
 :root {
-	--main-color1: #174543;
+
 	--main-color2: aliceblue;
 	--second-color1: #D7C37A;
 	--second-color2: #1a1927;
@@ -13,6 +13,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+  a{
+    text-decoration: none;
+}
 .fnt{
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -26,6 +29,7 @@
   background-color: #ffffff;
 }
 .menu-boxs {
+
 	color: white;
 	margin: auto;
 	padding: 1.3rem;
@@ -36,7 +40,7 @@
   }
 
   .titles h2 {
-	font-size: 1.9rem;
+	font-size: 2.8rem;
 	padding-bottom: 10px;
 	text-transform: uppercase;
   }
@@ -46,41 +50,44 @@
 	color: var(--second-color1);
   }
 
-  .menu-boxs .container {
+  .menu-boxs .containers {
+
+
+    margin-top: 85px;
 	display: inline-block;
 	padding: 0 10px 30px 10px;
   }
 
-  .menu-boxs .container .shuffle {
+  .menu-boxs .containers .shuffle {
     display: flex;
     justify-content: center;
     margin: 10px auto;
-    font-size: 1.1rem;
+    font-size: 2rem;
     width: fit-content;
     padding-left: 0;
   }
 
-  .menu-boxs .container .shuffle li {
+  .menu-boxs .containers .shuffle li {
 	list-style: none;
 	padding: 13px;
 	padding-top: 10px;
 	cursor: pointer;
 	margin-left: 10px;
 	margin-right: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 	transition: .3s all ease-in-out;
   }
 
-  .menu-boxs .container .shuffle li a:is(:link, :active, :visited).active {
+  .menu-boxs .containers .shuffle li a:is(:link, :active, :visited).active {
 	  background-color: var(--second-color1);
   }
 
-  .menu-boxs .container .shuffle li:hover{
+  .menu-boxs .containers .shuffle li:hover{
 	background-color: var(--second-color1);
 	color: black;
   }
 
-  .menu-boxs .container p {
+  .menu-boxs .containers p {
 	margin: auto;
 	color: #ccc;
 	font-size: 1.1rem;
@@ -159,8 +166,12 @@
   }
 
    .containe .details .name-price {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 21px;
   }
 
    .containe .details .name-price .price {
@@ -204,12 +215,14 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    left: 86rem;
+    left: 135rem;
     bottom: 2rem;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 6.5rem;
+    height: 6.5rem;
    }
 .quantity{
+    font-size: 13px;
+
     background-color: red;
     border-radius: 50%;
     display: flex;
@@ -219,7 +232,7 @@
     position: absolute;
     top: -5px;
     left: 0;
-    padding: 3px 10px;
+    padding: 6px 10px;
 }
 /* Footer */
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
@@ -324,8 +337,16 @@ footer .containr .row .column ul li a:hover{
 	footer .containr .row .column{
 		margin-bottom: 30px;
 	}
+    .brand{
+        margin-left: -10px;
+
+    }
 }
 @media (max-width: 574px){
+    .brand{
+        margin-left: -10px;
+
+    }
 	footer .containr .row .column{
 		width: 100%;
 		margin-bottom: 30px;
@@ -345,8 +366,8 @@ footer .containr .row .column ul li a:hover{
 /* Footer Right */
   @media (min-width: 768px) {
 
-    .container,
-    .menu-boxs .container p{
+    .containers,
+    .menu-boxs .containers p{
       width: 750px;
     }
 
@@ -373,8 +394,8 @@ footer .containr .row .column ul li a:hover{
 
   @media (min-width: 992px) {
 
-    .container,
-    .menu-boxs .container p {
+    .containers,
+    .menu-boxs .containers p {
       width: 970px;
     }
 

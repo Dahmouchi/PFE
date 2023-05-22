@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html1">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="">
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="{{asset('CssFolder/styleHome.css')}}">
-  <link rel="stylesheet" href="{{asset('CssFolder/framwork.css')}}">
-  <link rel="stylesheet" href="{{asset('cssFolder/all.min.css')}}" />
 
+@yield('style')
   <title>UniverFood</title>
 </head>
 
 <body>
  <!-- Header -->
  <section id="header">
-    <div class="header container">
+    <div class="header containernav">
       <div class="nav-bar">
         <div class="brand">
-          <a href="#hero">
-            <h1><span>E</span>ST <span>B</span>UVETTE</h1>
-          </a>
+            <img src="/images/logoIcon.png" alt="">
+          <div href="#hero">
+            <h1><span>U</span>NIVER<span>F</span>OOD</h1>
+          </div>
         </div>
         <div class="nav-list">
           <div class="hamburger">
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="#" data-after="Home">Home</a></li>
+            <li><a href="<?php if(Auth::check()) echo url('/auth');else echo url('/'); ?>" data-after="Home">Home</a></li>
             <li><a href="/products/show" data-after="Menu">Menu</a></li>
-            <li><a href="/products/show" data-after="Menu">Résérvation</a></li>
             <li><a href="#projects" data-after="Services">Services</a></li>
             <li><a href="#about" data-after="About">About</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
@@ -54,7 +52,7 @@
 
   @yield('content')
 
-
+@yield('scroll')
     <!--footer-->
 
     <footer>
@@ -100,9 +98,10 @@
 
       </body>
     <!--end footer-->
+   
 
 </body>
-
+    <script src="{{asset('jsFolder/master2.js')}}"></script>
   <script src="{{asset('jsFolder/all.min.js')}}"></script>
   <script src="{{asset('jsFolder/javaScript.js')}}"></script>
   </html>

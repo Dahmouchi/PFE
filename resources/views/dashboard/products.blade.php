@@ -32,6 +32,8 @@ Products
                     <option value="">-- Please Select an Option --</option>
                     <option value="food">Food</option>
                     <option value="drink">Drink</option>
+                    <option value="dessert">dessert</option>
+                    <option value="coffe">coffe</option>
                   </select>
               </div>
               <div class=" column">
@@ -124,6 +126,9 @@ Products
                     <option value="">-- Please Select an Option --</option>
                     <option value="food">foods</option>
                     <option value="drink">drinks</option>
+                    <option value="dessert">dessert</option>
+                    <option value="coffe">coffe</option>
+
                   </select>
               </div>
 

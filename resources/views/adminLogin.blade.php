@@ -46,9 +46,13 @@
 
                     </div>
             	</div>
-                <a href="{{Route('sinUp')}}">Registre</a>
+
             	<a href="#">Forgot Password?</a>
             	<input type="submit" class="btn" value="Login">
+                <div class="btn1">
+                     <a href="{{Route('sinUp')}}" >Registre</a>
+                </div>
+
                 @error('email')
                             <div class="alert alert-danger" role="alert">
                                 <strong>{{ $message }}</strong>

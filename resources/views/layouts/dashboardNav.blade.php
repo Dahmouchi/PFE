@@ -56,7 +56,7 @@
           <li>
             <a class="d-flex al-center rad-6 p-10" href="{{url('/auth')}}">
             <i class="fa-solid fa-house fa-lg"></i>
-              <span>Home</span>
+              <span>Website</span>
             </a>
           </li>
         </ul>
