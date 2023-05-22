@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -20,6 +21,8 @@
 >>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
 =======
 >>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
+=======
+>>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
@@ -30,6 +33,9 @@
   </head>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
+=======
 >>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
 =======
 >>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
