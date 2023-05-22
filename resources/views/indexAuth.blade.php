@@ -15,7 +15,66 @@
   <!-- End Hero Section  -->
 
 
-
+<!-- Start Slider Images -->
+<!-- <section id="slider">
+    <div class="container">
+        <div class="sub-container">
+            <div class="slider-wrapper">
+                <div>
+                    <h2>text</h2>
+                </div>
+                <br>
+                <div class="my-slider">
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img-1">
+                                <a href="">Learn More</a>
+                            </div>
+                            <div>
+                                <h3>Moroccan Tea</h3>
+                                <p>The Perfect Tea in The world</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img-2">
+                                <a href="">Learn More</a>
+                            </div>
+                            <div>
+                                <h3>Moroccan Tea</h3>
+                                <p>The Perfect Tea in The world</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img-3">
+                                <a href="">Learn More</a>
+                            </div>
+                            <div>
+                                <h3>Moroccan Tea</h3>
+                                <p>The Perfect Tea in The world</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide">
+                            <div class="slide-img img-4">
+                                <a href="">Learn More</a>
+                            </div>
+                            <div>
+                                <h3>Moroccan Tea</h3>
+                                <p>The Perfect Tea in The world</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- End  Slider Images -->
   <!-- Projects Section -->
   <section id="projects">
     <div class="projects container">
@@ -88,6 +147,8 @@
   </section>
   <!-- End Projects Section -->
 
+
+
   <!-- About Section -->
   <section id="about">
     <div class="about container">
@@ -144,4 +205,35 @@
   <span class="scroll-back" onclick="topFunction()"><i class="fa-solid fa-chevron-up fa-2xl"></i></span>
   <!-- End Contact Section -->
   <script src="{{asset('jsFolder/master2.js')}}"></script>
+    <script type="module">
+        import { tns } from "./node_modules/tiny-slider/src/tiny-slider"
+
+        let slider = tns({
+    container: ".my-slider",
+    slideBy: 1,
+    speed: 400,
+    nav: false,
+    autoplay: true,
+    controls: false,
+    autoplayButtonOutput: false,
+    responsive: {
+        1600:{
+            items : 4,
+            gutter : 20
+        },
+        1024:{
+            items: 3,
+            gutter: 20,
+        },
+        768:{
+            items: 2,
+            gutter: 20,
+        },
+        480:{
+            items: 1,
+            gutter: 20,
+        }
+    }
+});
+    </script>
   @endsection

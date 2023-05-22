@@ -79,10 +79,6 @@ Products
                 <td>{{$data->price}}</td>
                 <td>{{$data->description}}</td>
                 <td>
-<<<<<<< HEAD
-=======
-
->>>>>>> c56c4479be45152692bd1f548929f8057f0edc73
                    <div class="div" style="display: flex; justify-content:center ;">
                     <button class="rad-6 editProduct mr-5"><i class="fa-solid fa-pen-to-square"></i></button>
                     <form action="{{Route('products.destroy',$data->id)}}" method="POST">
@@ -91,10 +87,6 @@ Products
                         <button type="submit" class="rad-6 delete"><i class="fa-solid fa-trash "></i></button>
                     </form>
                    </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> c56c4479be45152692bd1f548929f8057f0edc73
                 </td>
               </tr>
         <!-- Trigger/Open The Modal -->

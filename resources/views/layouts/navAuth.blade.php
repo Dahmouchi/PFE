@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="{{asset('CssFolder/styleHome.css')}}">
   <link rel="stylesheet" href="{{asset('CssFolder/framwork.css')}}">
   <link rel="stylesheet" href="{{asset('cssFolder/all.min.css')}}" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
 
   <title>UniverFood</title>
 </head>

@@ -749,6 +749,7 @@ footer .containr .row .column ul li a:hover{
 	#header .nav-list ul li a {
 		font-size: 1.8rem;
 	}
+
 	#header .nav-list ul a:after {
 		display: none;
 	}
@@ -775,3 +776,66 @@ footer .containr .row .column ul li a:hover{
 	background-color: var(--main-color2);
 	color: white;
 }
+
+/* Start Slider Image */
+#slider{
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#slider .container{
+    width: 1600px;
+    margin: auto;
+}
+.sub-container{
+    width: 85%;
+    margin: auto;
+}
+.slide-img{
+    width: 100%;
+    height: 275px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+.slide-img:hover{
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+.slide-img a{
+    opacity: 0;
+    text-align: none;
+    transform: scale(0);
+    transition: .8s;
+    font-size: 1.5rem;
+    color: white;
+}
+.slide-img:hover a{
+    opacity: 1;
+    transform: scale(1);
+}
+.img-1{
+    background-image: url(../images/tea.jpg);
+}
+.img-2{
+    background-image: url(../images/tea.jpg);
+}
+.img-3{
+    background-image: url(../images/tea.jpg);
+}
+.img-4{
+    background-image: url(../images/tea.jpg);
+}
+@media (max-width: 1600px){
+    #slider .container{
+        width: 100%;
+
+    }
+}
+/* End Slider Image */
