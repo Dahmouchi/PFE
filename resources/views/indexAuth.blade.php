@@ -157,6 +157,40 @@
     </div>
   </section>
   <!-- End Contact Section -->
+  <!-- Start of Feedback -->
+  <div class="main-order">
+    <div class="order">
+      <div class="ord-title">
+        <h2> Your Feedback </h2>
+        <p>You've come to the right Place</p>
+      </div>
+      <form action="">
+        <div class="row">
+          <div class="column">
+
+            <input type="text" class="name" id="name" placeholder="Enter Your Name">
+          </div>
+
+          <div class="column ">
+            <input type="email" class="name" id="name" placeholder="Email">
+          </div>
+
+          <div class="column ">
+            <input type="text" class="ord subject" id="ord" placeholder="Subject">
+          </div>
+
+          <div class="column">
+            <textarea name="" id="" cols="1" rows="5" width="20px" height="20px" placeholder="Enter Message"></textarea>
+          </div>
+
+        </div>
+        <div class="ord-btn">
+          <button>Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- End Feedback -->
   @endsection
 
 @section('scroll')
