@@ -6,28 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="">
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   <link rel="stylesheet" href="{{asset('CssFolder/styleHome.css')}}">
   <link rel="stylesheet" href="{{asset('CssFolder/framwork.css')}}">
   <link rel="stylesheet" href="{{asset('cssFolder/all.min.css')}}" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 
-=======
->>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
 
-=======
-
->>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
-=======
-
->>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
-=======
-
->>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
 @yield('style')
   <title>UniverFood</title>
 </head>
@@ -119,7 +105,7 @@
 
       </body>
     <!--end footer-->
-   
+
 
 </body>
     <script src="{{asset('jsFolder/master2.js')}}"></script>

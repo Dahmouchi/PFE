@@ -2,27 +2,18 @@
 <html lang="en" class="html1">
 
 <head>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   <link rel="stylesheet" href="{{asset('CssFolder/styleHome.css')}}">
   <link rel="stylesheet" href="{{asset('CssFolder/framwork.css')}}">
   <title>Est Buvette</title>
 </head>
-=======
-=======
->>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
-=======
->>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
-=======
->>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
@@ -31,16 +22,7 @@
   @yield('style')
     <title>UniverFood</title>
   </head>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
-=======
->>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
-=======
->>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
-=======
->>>>>>> 945644cf05acb5a682834b63af02de0a30d16b6e
+
 
 <body>
  <!-- Header -->

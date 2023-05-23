@@ -13,6 +13,7 @@ if(Auth::check()){
   <link rel="stylesheet" href="{{asset('CssFolder/styleMenu.css')}}">
   <link rel="stylesheet" href="{{asset('CssFolder/framwork.css')}}">
   <link rel="stylesheet" href="{{asset('cssFolder/all.min.css')}}" />
+  
 @endsection
 @section('content')
 
