@@ -927,3 +927,120 @@ footer .containr .row .column ul li a:hover{
     }
 }
 /* End Slider Image */
+/* FeedBack  */
+
+.main-order {
+    height: 100vh;
+    background-image: url(../images/blur-library-interior-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 50% -16px; */
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main-order .order {
+    width: 30%;
+    min-width: 420px;
+    background: rgba(0, 0, 0, 0.47);
+    padding: 35px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+
+  .main-order .order .ord-title h2 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+  }
+
+  .main-order .order .ord-title p {
+    color: white;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    font-size: 18px;
+    font-family: var(--font-family2);
+    text-align: center;
+    font-weight: 400;
+    color: var(--second-color1);
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .main-order .order form {
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0 auto;
+
+  }
+
+  .main-order .order form .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 20px;
+  }
+
+  .main-order .order form .row .column label {
+    font-size: 16.5px;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .main-order .order form .row input,
+  .main-order .order form .row select,
+  .main-order .order form .row textarea {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 13px 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    border: 1.2px solid #c4cae9;
+    margin-top: 5px;
+  }
+  .subject{
+    width: 100%;
+  }
+  .main-order .order form .row textarea {
+    resize: none;
+  }
+
+  .main-order .order form .row input:focus,
+  .main-order .order form .row select:focus,
+  .main-order .order form .row textarea:focus {
+    outline: none;
+    border-color: var(--second-color1);
+  }
+
+  .main-order .order button {
+    background-color: var(--second-color2);
+    color: white;
+    font-size: 17px;
+    border: none;
+
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 5px;
+    width: 200px;
+    transition: .3s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .main-order .order button:hover {
+    background-color: var(--second-color1);
+    color: var(--second-color2);
+  }
+
+  .main-order .order .ord-btn {
+    text-align: center;
+  }
+  @media (max-width: 768px){
+
+  }
+/* FeedBack */
