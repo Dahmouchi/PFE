@@ -6,18 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="">
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-<<<<<<< HEAD
-
-  <link rel="stylesheet" href="{{asset('CssFolder/styleHome.css')}}">
-  <link rel="stylesheet" href="{{asset('CssFolder/framwork.css')}}">
-  <link rel="stylesheet" href="{{asset('cssFolder/all.min.css')}}" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-
-
-=======
-
->>>>>>> b1ab8ca21f0de1e1782f14c0f56102dd3606b380
 @yield('style')
   <title>UniverFood</title>
 </head>
@@ -109,12 +97,8 @@
 
       </body>
     <!--end footer-->
-   
 
-<<<<<<< HEAD
 
-=======
->>>>>>> b1ab8ca21f0de1e1782f14c0f56102dd3606b380
 </body>
     <script src="{{asset('jsFolder/master2.js')}}"></script>
   <script src="{{asset('jsFolder/all.min.js')}}"></script>

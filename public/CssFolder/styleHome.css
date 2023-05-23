@@ -169,7 +169,7 @@ p {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: var(--main-color2);
+	background-color: #1a1927;
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -186,7 +186,7 @@ p {
 	left: 0%;
 }
 #header .nav-list ul a {
-	font-size: 12px;
+	font-size: 20px;
 	font-weight: 300;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
@@ -204,7 +204,7 @@ p {
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
 	color: rgba(240, 248, 255, 0.021);
-	font-size: 13rem;
+	font-size: 10rem;
 	letter-spacing: 50px;
 	z-index: -1;
 	transition: 0.3s ease letter-spacing;
@@ -276,11 +276,11 @@ p {
 
 #hero {
 	background-image: url('../images/pexels-life-of-pix-67469.jpg');
-	background-size:cover;
+	background-size: cover;
+    background-repeat: no-repeat;
 	background-position: 15px -150px;
 	position: relative;
 	z-index: 1;
-
 }
 #hero::after {
 	content: '';
@@ -329,11 +329,7 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-<<<<<<< HEAD
-	background-color: #D7C37A;
-=======
 	background-color: #765335;
->>>>>>> b1ab8ca21f0de1e1782f14c0f56102dd3606b380
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
@@ -617,8 +613,6 @@ footer .containr .row .column ul li a:hover{
         margin-left: -10px;
 
     }
-<<<<<<< HEAD
-=======
     #hero {
         background-image: url('../images/after.jpg');
         background-size:cover;
@@ -635,7 +629,6 @@ footer .containr .row .column ul li a:hover{
         justify-content: center;
         align-items: center;
     }
->>>>>>> b1ab8ca21f0de1e1782f14c0f56102dd3606b380
 	footer .containr{
 		max-width: 100%;
 		margin: auto;

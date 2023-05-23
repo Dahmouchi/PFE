@@ -9,11 +9,7 @@
 @section('content')
   <!-- Hero Section  -->
   <section id="hero">
-<<<<<<< HEAD
-    <div class="hero containernav">
-=======
     <div class="hero">
->>>>>>> b1ab8ca21f0de1e1782f14c0f56102dd3606b380
       <div>
         <h1>Hello, <span></span></h1>
         <h1>Welcome to <span></span></h1>
@@ -23,93 +19,21 @@
     </div>
   </section>
   <!-- End Hero Section  -->
-<<<<<<< HEAD
 
-
-
-<!-- Start Slider Images -->
-<!-- <section id="slider">
-    <div class="container">
-        <div class="sub-container">
-            <div class="slider-wrapper">
-                <div>
-                    <h2>text</h2>
-                </div>
-                <br>
-                <div class="my-slider">
-                    <div>
-                        <div class="slide">
-                            <div class="slide-img img-1">
-                                <a href="">Learn More</a>
-                            </div>
-                            <div>
-                                <h3>Moroccan Tea</h3>
-                                <p>The Perfect Tea in The world</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="slide">
-                            <div class="slide-img img-2">
-                                <a href="">Learn More</a>
-                            </div>
-                            <div>
-                                <h3>Moroccan Tea</h3>
-                                <p>The Perfect Tea in The world</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="slide">
-                            <div class="slide-img img-3">
-                                <a href="">Learn More</a>
-                            </div>
-                            <div>
-                                <h3>Moroccan Tea</h3>
-                                <p>The Perfect Tea in The world</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="slide">
-                            <div class="slide-img img-4">
-                                <a href="">Learn More</a>
-                            </div>
-                            <div>
-                                <h3>Moroccan Tea</h3>
-                                <p>The Perfect Tea in The world</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-<!-- End  Slider Images -->
   <!-- Projects Section -->
   <section id="projects">
     <div class="projects container">
-=======
->>>>>>> b1ab8ca21f0de1e1782f14c0f56102dd3606b380
+
   <!-- slayder Section -->
   <center><h1 class="section-title" style="margin-top:100px">Our <span>Menu</span></h1></center>
 <center><section class="full">
     <div id="slider">
         <figure>
-<<<<<<< HEAD
-            <img src="images/gallary_1.jpg" alt="">
-            <img src="images/gallary_2.jpg" alt="">
-            <img src="images/gallary_3.jpg" alt="">
-            <img src="images/gallary_4.jpg" alt="">
-            <img src="images/gallary_1.jpg" alt="">
-=======
             <img src="images/slider_2.jpg" alt="">
             <img src="images/slider_1.jpg" alt="">
             <img src="images/slider_3.jpg" alt="">
             <img src="images/slider_4.jpg" alt="">
             <img src="images/slider_2.jpg" alt="">
->>>>>>> b1ab8ca21f0de1e1782f14c0f56102dd3606b380
         </figure>
     </div>
 </section></center>
@@ -117,10 +41,6 @@
 <!-- Projects Section -->
 <section id="projects">
     <div class="projects containernav">
-<<<<<<< HEAD
-
-=======
->>>>>>> b1ab8ca21f0de1e1782f14c0f56102dd3606b380
       <div class="projects-header">
         <h1 class="section-title">Our <span>Gallary</span></h1>
       </div>
@@ -182,11 +102,7 @@
 
 
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> b1ab8ca21f0de1e1782f14c0f56102dd3606b380
   <!-- About Section -->
   <section id="about">
     <div class="about containernav">
@@ -241,50 +157,10 @@
     </div>
   </section>
   <!-- End Contact Section -->
-<<<<<<< HEAD
-
-  <script src="{{asset('jsFolder/master2.js')}}"></script>
-    <script type="module">
-        import { tns } from "./node_modules/tiny-slider/src/tiny-slider"
-
-        let slider = tns({
-    container: ".my-slider",
-    slideBy: 1,
-    speed: 400,
-    nav: false,
-    autoplay: true,
-    controls: false,
-    autoplayButtonOutput: false,
-    responsive: {
-        1600:{
-            items : 4,
-            gutter : 20
-        },
-        1024:{
-            items: 3,
-            gutter: 20,
-        },
-        768:{
-            items: 2,
-            gutter: 20,
-        },
-        480:{
-            items: 1,
-            gutter: 20,
-        }
-    }
-});
-    </script>
   @endsection
 
-=======
->>>>>>> b1ab8ca21f0de1e1782f14c0f56102dd3606b380
 @section('scroll')
 <span class="scroll-back" onclick="topFunction()"><i class="fa-solid fa-chevron-up fa-2xl"></i></span>
 @endsection
 <script src="{{asset('jsFolder/all.min.js')}}"></script>
 <script src="{{asset('jsFolder/master2.js')}}"></script>
-<<<<<<< HEAD
-=======
-
->>>>>>> b1ab8ca21f0de1e1782f14c0f56102dd3606b380

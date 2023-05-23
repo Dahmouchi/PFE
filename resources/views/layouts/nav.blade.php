@@ -2,19 +2,6 @@
 <html lang="en" class="html1">
 
 <head>
-<<<<<<< HEAD
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-  <link rel="stylesheet" href="{{asset('CssFolder/styleHome.css')}}">
-  <link rel="stylesheet" href="{{asset('CssFolder/framwork.css')}}">
-  <title>Est Buvette</title>
-</head>
-=======
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
@@ -23,7 +10,6 @@
   @yield('style')
     <title>UniverFood</title>
   </head>
->>>>>>> b1ab8ca21f0de1e1782f14c0f56102dd3606b380
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
