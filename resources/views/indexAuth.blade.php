@@ -26,7 +26,7 @@
 
   <!-- slayder Section -->
   <center><h1 class="section-title" style="margin-top:100px">Our <span>Menu</span></h1></center>
-<center><section class="full">
+<center><section class="fulls">
     <div id="sliders">
         <figure>
             <img src="images/slider_2.jpg" alt="">
