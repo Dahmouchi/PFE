@@ -281,6 +281,7 @@ p {
 	background-position: 15px -150px;
 	position: relative;
 	z-index: 1;
+    height: 750px;
 }
 #hero::after {
 	content: '';
@@ -304,7 +305,6 @@ p {
 
 }
 #hero h1 {
-
 	display: block;
     width: fit-content;
     font-size: 4rem;
@@ -709,6 +709,11 @@ footer .containr .row .column ul li a:hover{
 /* End Keyframes */
 
 /* Media Query For Tablet */
+@media (max-width: 768px){
+    #hero h1, #hero a {
+        visibility: hidden;
+    }
+}
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
