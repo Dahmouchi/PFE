@@ -25,13 +25,11 @@ if(Auth::check()){
         </div>
         <p style="font-size: 14px;">Discover a world of flavors on our diverse menu.</p>
         <ul class="shuffle">
+            <li><a href="#coffee" style="color:white;text-decoration:none;">COFFEE</a></li>
             <li><a href="#food" style="color:white;text-decoration:none;">FOODS</a></li>
             <li ><a href="#drink" style="color:white;text-decoration:none;">DRINKS</a> </li>
             <li><a href="#dessert" style="color:white;text-decoration:none;">DESSERT</a></li>
-            <li><a href="#coffee" style="color:white;text-decoration:none;">COFFEE</a></li>
 
-
-            <li ><a href= "<?php if(Auth::check()) echo url('/auth');else echo url('/'); ?>" style="color:white;text-decoration:none;">HOME</a> </li>
         </ul>
         </div>
     </section>
