@@ -9,7 +9,7 @@
 @section('content')
  <!-- Hero Section  -->
  <section id="hero">
-    <div class="hero containernav">
+    <div class="hero">
       <div>
         <h1>Hello, <span></span></h1>
         <h1>Welcome to <span></span></h1>
@@ -24,11 +24,11 @@
 <center><section class="full">
     <div id="slider">
         <figure>
-            <img src="images/gallary_1.jpg" alt="">
-            <img src="images/gallary_2.jpg" alt="">
-            <img src="images/gallary_3.jpg" alt="">
-            <img src="images/gallary_4.jpg" alt="">
-            <img src="images/gallary_1.jpg" alt="">
+            <img src="images/slider_2.jpg" alt="">
+            <img src="images/slider_1.jpg" alt="">
+            <img src="images/slider_3.jpg" alt="">
+            <img src="images/slider_4.jpg" alt="">
+            <img src="images/slider_2.jpg" alt="">
         </figure>
     </div>
 </section></center>
