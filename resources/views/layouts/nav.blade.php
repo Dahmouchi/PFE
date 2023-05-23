@@ -2,6 +2,7 @@
 <html lang="en" class="html1">
 
 <head>
+<<<<<<< HEAD
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,16 @@
   <link rel="stylesheet" href="{{asset('CssFolder/framwork.css')}}">
   <title>Est Buvette</title>
 </head>
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+  @yield('style')
+    <title>UniverFood</title>
+  </head>
+>>>>>>> b1ab8ca21f0de1e1782f14c0f56102dd3606b380
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
