@@ -88,7 +88,7 @@
       </div>
       <div class="bottom-bar">
         <p>&copy; Copyight <b>Est Buvette</b>. All Rights Reserved</p>
-        <p> Made with &hearts;</p>
+        <p> Made by Elhassan dahmouchi and Adnane Amrouss</p>
       </div>
     </footer>
 <!--end footer-->

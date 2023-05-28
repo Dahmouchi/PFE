@@ -72,7 +72,7 @@ p {
 	background-color: var(--main-color1);
 }
 .brand{
-    margin-left: -100px;
+    margin-left: -10rem;
     display: flex;
     justify-content: space-between;
 }
@@ -622,7 +622,7 @@ footer .containr .row .column ul li a:hover{
         z-index: 1;
 
     }
-    .full{
+    .fulls{
         width: 450px;
         height: 240px;
         display: flex;

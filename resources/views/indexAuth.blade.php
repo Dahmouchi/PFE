@@ -14,7 +14,7 @@
         <h1>Hello, <span></span></h1>
         <h1>Welcome to <span></span></h1>
         <h1>EST Buvette <span></span></h1>
-        <a href="#projects" type="button" class="cta">LEARN MORE</a>
+        <a href="#about" type="button" class="cta">LEARN MORE</a>
       </div>
     </div>
   </section>
@@ -122,7 +122,82 @@
     </div>
   </section>
   <!-- End About Section -->
+  <div class="review" id="Review">
+    <h1>Customer<span>Review</span></h1>
 
+    <div class="review_box">
+        <div class="review_card">
+
+            <div class="review_profile">
+                <img src="{{asset('images/review_1.png')}}">
+            </div>
+
+            <div class="review_text">
+                <h2 class="name">John Deo</h2>
+
+                <div class="review_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <div class="review_social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
+                    blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
+                    asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
+                   </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="review_card">
+
+            <div class="review_profile">
+                <img src="{{asset('images/review_4.png')}}">
+            </div>
+
+            <div class="review_text">
+                <h2 class="name">John Deo</h2>
+
+                <div class="review_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <div class="review_social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
+                    blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
+                    asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
+                     </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
   <!-- Contact Section -->
   <section id="contact">
     <div class="contact containernav">
@@ -157,6 +232,7 @@
     </div>
   </section>
   <!-- End Contact Section -->
+
   <!-- Start of Feedback -->
   <div class="main-order">
     <div class="order">
